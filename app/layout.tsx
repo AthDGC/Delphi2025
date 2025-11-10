@@ -5,15 +5,15 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Workshop on Corpus-Based Approaches | Delphi 2025',
-  description: 'An invitation-only workshop on Corpus-Based Approaches to Text Types and Language Change, November 27-29, 2025, Delphi, Greece',
+  title: 'Digital Diachrony Workshop 2025 | Delphi',
+  description: 'An invitation-only workshop on Corpus-Based Approaches to Text Types and Language Change in Delphi, November 27-29, 2025, Greece. Funded by HFRI.',
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#0ea5e9',
   openGraph: {
-    title: 'Workshop on Corpus-Based Approaches | Delphi 2025',
-    description: 'Bringing together 25 leading specialists in historical corpus linguistics',
+    title: 'Digital Diachrony Workshop 2025 | Delphi',
+    description: 'An invitation-only workshop bringing together specialists in diachronic linguistics',
     url: 'https://athdiacorpus.github.io/delphi2025',
-    siteName: 'Workshop on Corpus-Based Approaches',
+    siteName: 'Digital Diachrony Workshop 2025',
     locale: 'en_US',
     type: 'website',
   },

@@ -102,14 +102,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-primary-600">Workshop on Corpus-Based Approaches</span>
+              <span className="text-xl font-bold text-primary-600">Digital Diachrony Workshop 2025</span>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a href="#about" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
                 About
               </a>
               <a href="#keynotes" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                Keynotes
+                Plenary
               </a>
               <a href="#program" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
                 Program
@@ -141,7 +141,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
             >
-              Workshop on Corpus-Based Approaches
+              Digital Diachrony Workshop 2025
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
@@ -149,7 +149,7 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mt-4 text-xl sm:text-2xl font-light"
             >
-              Corpus-Based Approaches to Text Types and Language Change
+              Corpus-Based Approaches to Text Types and Language Change in Delphi
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
@@ -172,7 +172,7 @@ export default function Home() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-primary-100"
             >
-              An invitation-only workshop bringing together 25 leading specialists in historical corpus linguistics
+              An invitation-only workshop bringing together specialists in diachronic linguistics
             </motion.p>
           </div>
         </div>
@@ -221,11 +221,11 @@ export default function Home() {
               <div className="space-y-3">
                 <div className="flex items-start">
                   <UserGroupIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">25 leading specialists in historical corpus linguistics</p>
+                  <p className="text-gray-700">Invitation-only workshop with specialists in diachronic linguistics</p>
                 </div>
                 <div className="flex items-start">
                   <AcademicCapIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">5 distinguished keynote speakers</p>
+                  <p className="text-gray-700">Distinguished plenary speakers</p>
                 </div>
                 <div className="flex items-start">
                   <GlobeAltIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
@@ -243,10 +243,43 @@ export default function Home() {
             className="mt-12 bg-gradient-to-r from-primary-600 to-blue-600 rounded-lg p-8 text-white text-center"
           >
             <h3 className="text-2xl font-bold mb-4">Fully Funded Workshop</h3>
-            <p className="text-lg">
+            <p className="text-lg mb-4">
               All expenses are covered for participants. No registration fees. Accommodation, meals, and cultural program included.
             </p>
+            <p className="text-base">
+              Funded by the Hellenic Foundation for Research and Innovation (HFRI) under the "2nd Call for H.F.R.I. Research Projects to support Faculty Members & Researchers".
+            </p>
+            <p className="text-base mt-2">
+              In cooperation with the Naxos School project on Diachronic Linguistics.
+            </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Logos Section */}
+      <section className="py-12 bg-white border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold text-gray-600 mb-6">Supported By</h3>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            <div className="flex flex-col items-center">
+              <img 
+                src="https://www.elidek.gr/wp-content/uploads/2020/08/elidek_logo_en.png" 
+                alt="HFRI - Hellenic Foundation for Research and Innovation" 
+                className="h-20 object-contain grayscale hover:grayscale-0 transition-all"
+              />
+              <p className="text-xs text-gray-500 mt-2">HFRI</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img 
+                src="https://en.uoa.gr/fileadmin/user_upload/logos/uoa_logo_EN.jpg" 
+                alt="National and Kapodistrian University of Athens" 
+                className="h-20 object-contain grayscale hover:grayscale-0 transition-all"
+              />
+              <p className="text-xs text-gray-500 mt-2">NKUA</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -255,10 +288,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Keynote Speakers
+              Plenary Speakers
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              Five distinguished scholars leading the field
+              Distinguished scholars in the field
             </p>
           </div>
 
@@ -449,8 +482,8 @@ export default function Home() {
                       <p className="font-medium">Prof. Nikolaos Lavidas</p>
                       <p className="text-gray-600">National and Kapodistrian University of Athens</p>
                       <p className="mt-1">
-                        <a href="mailto:lavidas@uoa.gr" className="text-primary-600 hover:text-primary-500">
-                          lavidas@uoa.gr
+                        <a href="mailto:nlavidas@enl.uoa.gr" className="text-primary-600 hover:text-primary-500">
+                          nlavidas@enl.uoa.gr
                         </a>
                       </p>
                     </dd>
@@ -473,7 +506,7 @@ export default function Home() {
             </div>
             <div className="px-5 py-2">
               <a href="#keynotes" className="text-base text-gray-300 hover:text-white">
-                Keynotes
+                Plenary
               </a>
             </div>
             <div className="px-5 py-2">
