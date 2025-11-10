@@ -132,7 +132,7 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="relative text-white py-24 sm:py-32 overflow-hidden"
         style={{
-          backgroundImage: "url('https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+          backgroundImage: "url('https://images.pexels.com/photos/18659913/pexels-photo-18659913.jpeg?auto=compress&cs=tinysrgb&w=1920')",
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -256,6 +256,14 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <img 
+                src="https://greece20.gov.gr/wp-content/uploads/2020/12/greece2-logo-en.png" 
+                alt="Greece 2.0 - National Recovery and Resilience Plan" 
+                className="h-20 object-contain grayscale hover:grayscale-0 transition-all"
+              />
+              <p className="text-xs text-gray-500 mt-2">Greece 2.0</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img 
                 src="https://en.uoa.gr/fileadmin/user_upload/logos/uoa_logo_EN.jpg" 
                 alt="National and Kapodistrian University of Athens" 
                 className="h-20 object-contain grayscale hover:grayscale-0 transition-all"
@@ -263,10 +271,10 @@ export default function Home() {
               <p className="text-xs text-gray-500 mt-2">NKUA</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="h-20 px-6 flex items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <div className="h-20 px-8 flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-md hover:shadow-lg transition-all border-2 border-slate-700">
                 <div className="text-center">
-                  <p className="text-white font-bold text-lg leading-tight">Naxos School</p>
-                  <p className="text-blue-100 text-xs font-medium tracking-wider">DiaLing Project</p>
+                  <p className="text-white font-bold text-2xl tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>ΝΣΣΔΛ</p>
+                  <p className="text-slate-300 text-xs font-medium tracking-wide mt-1">Naxos School</p>
                 </div>
               </div>
               <p className="text-xs text-gray-500 mt-2">Naxos School</p>
@@ -300,8 +308,8 @@ export default function Home() {
                 <div className="md:flex">
                   <div className="md:flex-shrink-0 md:w-48 overflow-hidden">
                     <img 
-                      src={`https://images.pexels.com/photos/${[1438072, 1370296, 256455, 1181406, 256541][index]}/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400`}
-                      alt="Speaker background"
+                      src={`https://images.pexels.com/photos/${[4254165, 5011647, 3075993, 5011641, 3075994][index]}/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400`}
+                      alt=""
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -315,6 +323,38 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+
+          {/* Other Invited Speakers */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-16 pt-12 border-t-2 border-gray-300"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Other Invited Speakers</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                'Theodoros Michalareas',
+                'Vassileios Symeonidis',
+                'Sofia Chionidi',
+                'Anastasia Tsiropina',
+                'Eleni Plakoutsi',
+                'Evangelos Argyropoulos'
+              ].map((name, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow border border-gray-200"
+                >
+                  <p className="text-lg font-semibold text-gray-800">{name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
