@@ -15,34 +15,29 @@ const fadeIn = {
 
 const keynotes = [
   {
-    name: 'Prof. Dag Trygve Truslew Haug',
+    name: 'Dag Haug',
     institution: 'University of Oslo, Norway',
-    title: 'Valency Patterns in Historical Treebanks: Evidence from the PROIEL Corpus',
-    bio: 'Professor of Linguistics at the University of Oslo and Director of the PROIEL (Pragmatic Resources in Old Indo-European Languages) project.'
+    title: 'Plenary Speaker'
   },
   {
-    name: 'Prof. George Mikros',
+    name: 'George Mikros',
     institution: 'University of Qatar',
-    title: 'LLMs and the Stylometric Challenge of Ancient Greek Prose: Opportunities and Limitations',
-    bio: 'Professor of Computational Linguistics at the University of Qatar, specializing in quantitative text analysis and stylometry.'
+    title: 'Plenary Speaker'
   },
   {
-    name: 'Prof. Ioanna Sitaridou',
-    institution: 'University of Cambridge, UK',
-    title: 'From Romeyka to Digital Resources: Corpus-Based Approaches to Greek Dialectal Syntax',
-    bio: 'Professor of Spanish and Historical Linguistics at the University of Cambridge, researching Greek dialectology and the endangered language Romeyka.'
-  },
-  {
-    name: 'Dr. Alexander Tantos',
-    institution: 'Aristotle University of Thessaloniki, Greece',
-    title: 'Building and Querying Large-Scale Corpora for Modern Greek: Lessons for Historical Linguistics',
-    bio: 'Computational linguist at Aristotle University of Thessaloniki, specializing in corpus development for Modern and Medieval Greek.'
-  },
-  {
-    name: 'Prof. Dr. Carola Trips',
+    name: 'Carola Trips',
     institution: 'University of Mannheim, Germany',
-    title: 'Corpus-Based Approaches to Language Change: Methodological Reflections from Medieval Multilingual Contexts',
-    bio: 'Chair of English Linguistics/Diachrony and spokesperson for the major DFG research group MELCIL (Medieval English and Latin: Corpus-Based Inquiries into Multilingualism).'
+    title: 'Plenary Speaker'
+  },
+  {
+    name: 'Alexandros Tantos',
+    institution: 'Aristotle University of Thessaloniki, Greece',
+    title: 'Plenary Speaker'
+  },
+  {
+    name: 'Ioanna Sitaridou',
+    institution: 'University of Cambridge, UK',
+    title: 'Plenary Speaker'
   }
 ];
 
@@ -51,45 +46,50 @@ const schedule = {
     date: 'Thursday, November 27',
     title: 'Opening & Foundations',
     sessions: [
-      { time: '09:30', event: 'Welcome & Opening Remarks' },
-      { time: '10:00', event: 'Plenary: Prof. Dag Haug (Oslo)' },
-      { time: '11:00', event: 'Coffee Break & Networking' },
-      { time: '11:30', event: 'Plenary: Prof. George Mikros (Qatar)' },
-      { time: '13:00', event: 'Lunch' },
-      { time: '14:30', event: 'Roundtable: Methodology Exchange' },
-      { time: '16:00', event: 'Coffee Break' },
-      { time: '16:30', event: 'Paper Presentations (3 papers)' },
-      { time: '18:00', event: 'End of Day' },
-      { time: '20:00', event: 'Welcome Reception' }
+      { time: '09:30', event: 'Registration & Welcome' },
+      { time: '09:45', event: 'Workshop Opening: Organizing Committee (30 min)' },
+      { time: '10:15', event: 'Project Presentation: Lavidas et al. (75 min)' },
+      { time: '11:30', event: 'Coffee Break' },
+      { time: '12:00', event: 'Plenary: Dag Haug (60 min)' },
+      { time: '13:00', event: 'Fried (30 min)' },
+      { time: '13:30', event: 'Lunch at European Cultural Centre' },
+      { time: '15:00', event: 'Plenary: Carola Trips (60 min)' },
+      { time: '16:00', event: 'Francesca Dell\'Oro (30 min)' },
+      { time: '16:30', event: 'Coffee Break' },
+      { time: '17:00', event: 'Daniel Riaño Rufilanchas (60 min)' },
+      { time: '18:00', event: 'Iván Andrés-Alba (30 min)' },
+      { time: '18:30', event: 'Stavroula Kefala (30 min)' },
+      { time: '20:30', event: 'Dinner in Arachova Village' }
     ]
   },
   day2: {
     date: 'Friday, November 28',
-    title: 'Deep Dive & Planning',
+    title: 'Deep Dive & Collaboration',
     sessions: [
-      { time: '09:30', event: 'Plenary: Prof. Ioanna Sitaridou (Cambridge)' },
-      { time: '11:00', event: 'Coffee Break' },
-      { time: '11:30', event: 'Plenary: Dr. Alexander Tantos (Thessaloniki)' },
-      { time: '13:00', event: 'Lunch' },
-      { time: '14:30', event: 'Plenary: Prof. Dr. Carola Trips (Mannheim)' },
-      { time: '16:00', event: 'Coffee Break' },
-      { time: '16:30', event: 'Collaborative Planning Session' },
-      { time: '18:00', event: 'End of Day' },
-      { time: '20:00', event: 'Gala Dinner' }
+      { time: '09:30', event: 'Plenary: George Mikros (60 min)' },
+      { time: '10:30', event: 'Coffee Break' },
+      { time: '11:00', event: 'Nikiforidou (30 min)' },
+      { time: '11:30', event: 'Geka (30 min)' },
+      { time: '12:00', event: 'Piata (30 min)' },
+      { time: '12:30', event: 'Departure for Archaeological Site' },
+      { time: '13:00', event: 'Guided Tour of Delphi (2.5 hrs)' },
+      { time: '16:00', event: 'Lunch at European Cultural Centre' },
+      { time: '17:30', event: 'Plenary: Alexandros Tantos (60 min)' },
+      { time: '18:30', event: 'Coffee Break' },
+      { time: '19:00', event: 'Plenary: Ioanna Sitaridou (60 min)' },
+      { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
     ]
   },
   day3: {
     date: 'Saturday, November 29',
-    title: 'Future Directions',
+    title: 'Technology & Future Directions',
     sessions: [
-      { time: '09:30', event: 'Paper Presentations (2 papers)' },
-      { time: '10:30', event: 'Roundtable: Future Collaboration' },
-      { time: '11:00', event: 'Coffee Break' },
-      { time: '11:30', event: 'Working Group Formation' },
-      { time: '12:30', event: 'Closing Remarks' },
-      { time: '13:00', event: 'Optional: Archaeological Site Tour' },
-      { time: '15:00', event: 'Optional: Farewell Lunch' },
-      { time: '18:00', event: 'Return to Athens' }
+      { time: '09:30', event: 'Special Session: ARCAS Team, CHS Harvard & AthDGC (60 min)' },
+      { time: '10:30', event: 'Coffee Break' },
+      { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
+      { time: '12:00', event: 'Closing Ceremony (30 min)' },
+      { time: '12:30', event: 'Lunch at European Cultural Centre' },
+      { time: '14:30', event: 'Departure to Athens' }
     ]
   }
 };
@@ -242,34 +242,34 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-12">
             <div className="flex flex-col items-center">
-              <div className="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-300 rounded-xl shadow-lg p-4">
                 <div className="text-center">
-                  <p className="text-red-600 font-bold text-lg">H.F.R.I.</p>
-                  <p className="text-xs text-gray-600 mt-1">Hellenic Foundation</p>
+                  <p className="text-red-700 font-extrabold text-2xl">H.F.R.I.</p>
+                  <p className="text-xs text-red-600 mt-2 font-semibold">HELLENIC FOUNDATION</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-blue-50 to-green-50 border-2 border-blue-300 rounded-xl shadow-lg p-4">
                 <div className="text-center">
-                  <p className="font-bold text-lg"><span className="text-blue-700">Greece</span> <span className="text-green-500">2.0</span></p>
-                  <p className="text-xs text-gray-600 mt-1">Recovery Plan</p>
+                  <p className="font-extrabold text-2xl"><span className="text-blue-700">Greece</span> <span className="text-green-600">2.0</span></p>
+                  <p className="text-xs text-gray-700 mt-2 font-semibold">RECOVERY PLAN</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-400 rounded-xl shadow-lg p-4">
                 <div className="text-center">
-                  <p className="text-blue-800 font-bold text-sm">NKUA</p>
-                  <p className="text-xs text-gray-600 mt-1">Univ. of Athens</p>
+                  <p className="text-blue-900 font-extrabold text-2xl">NKUA</p>
+                  <p className="text-xs text-blue-700 mt-2 font-semibold">UNIVERSITY OF ATHENS</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="h-24 w-40 flex items-center justify-center bg-slate-900 rounded-lg shadow-md p-4">
+              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-950 border-2 border-slate-600 rounded-xl shadow-lg p-4">
                 <div className="text-center">
-                  <p className="text-white font-bold text-xl tracking-widest">ΝΣΣΔΛ</p>
-                  <p className="text-slate-300 text-xs mt-1">Naxos School</p>
+                  <p className="text-white font-extrabold text-3xl tracking-widest">ΝΣΣΔΛ</p>
+                  <p className="text-slate-200 text-xs mt-2 font-semibold tracking-wide">NAXOS SCHOOL</p>
                 </div>
               </div>
             </div>
@@ -300,11 +300,9 @@ export default function Home() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div>
-                  <div className="p-8">
+                  <div className="p-8 text-center">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
-                    <p className="text-primary-600 font-medium mb-4">{speaker.institution}</p>
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3 italic">&ldquo;{speaker.title}&rdquo;</h4>
-                    <p className="text-gray-700 leading-relaxed">{speaker.bio}</p>
+                    <p className="text-primary-600 font-medium">{speaker.institution}</p>
                   </div>
                 </div>
               </motion.div>
@@ -322,20 +320,18 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Invited Speakers</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                'Prof. Dag Trygve Truslew Haug',
-                'Prof. George Mikros',
-                'Prof. Ioanna Sitaridou',
-                'Dr. Alexander Tantos',
-                'Prof. Dr. Carola Trips',
-                'Prof. Nikolaos Lavidas',
-                'Assoc. Prof. Kiki Nikiforidou',
-                'Dr. Angeliki Geka',
-                'Theodoros Michalareas',
-                'Vassileios Symeonidis',
-                'Sofia Chionidi',
-                'Anastasia Tsiropina',
-                'Eleni Plakoutsi',
-                'Evangelos Argyropoulos'
+                'Nikolaos Lavidas',
+                'Kiki Nikiforidou',
+                'Angeliki Geka',
+                'Anna Piata',
+                'Mirjam Fried',
+                'Francesca Dell\'Oro',
+                'Daniel Riaño Rufilanchas',
+                'Iván Andrés-Alba',
+                'Stavroula Kefala',
+                'Esteban Belmehdi',
+                'Ioanna Papadopoulou',
+                'Julien Razanajao'
               ].map((name, index) => (
                 <motion.div
                   key={index}
