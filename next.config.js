@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/delphi2025',
-  assetPrefix: '/delphi2025',
+  basePath: '/Delphi2025',
+  assetPrefix: '/Delphi2025',
   images: {
     unoptimized: true,
   },
