@@ -183,12 +183,20 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+            >
+              <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ancient Manuscript" className="rounded-lg shadow-lg" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-gray-50 rounded-lg p-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -197,19 +205,6 @@ export default function Home() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Set in the inspiring archaeological site of Delphi - ancient center of wisdom and prophecy - we explore how corpus-based methods illuminate patterns of language change across millennia.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-primary-50 rounded-lg p-8"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Workshop Philosophy</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We embrace "paddle-open-source" collaboration - informal, collegial exchange focused on building lasting research partnerships rather than formal presentations.
               </p>
             </motion.div>
           </div>
@@ -377,11 +372,20 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <img src="https://images.pexels.com/photos/261045/pexels-photo-261045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="European Cultural Centre of Delphi" className="rounded-lg shadow-lg" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-lg shadow-lg p-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">The Venue</h3>
@@ -406,35 +410,6 @@ export default function Home() {
                   WiFi and modern facilities
                 </li>
               </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-lg p-8"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Getting There</h3>
-              <div className="space-y-4 text-gray-700">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">From Athens</h4>
-                  <p>Workshop-provided bus: Wednesday Nov 26, 15:00 from Syntagma Metro Station (2.5 hours)</p>
-                  <p className="mt-1">Return: Saturday Nov 29, 18:00 to Athens</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Weather</h4>
-                  <p>Late November: 5-15°C (41-59°F)</p>
-                  <p className="mt-1">Bring warm layers, rain jacket, comfortable shoes</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Cultural Program</h4>
-                  <ul className="space-y-1">
-                    <li>• Welcome reception</li>
-                    <li>• Gala dinner</li>
-                    <li>• Guided tour of archaeological site</li>
-                  </ul>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
