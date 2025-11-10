@@ -130,9 +130,8 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative bg-gradient-to-br from-sky-600 via-blue-700 to-indigo-800 text-white py-24 sm:py-32 overflow-hidden"
+        className="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-24 sm:py-32"
       >
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <motion.h1 
@@ -171,11 +170,8 @@ export default function Home() {
       </motion.div>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
-        <div className="absolute top-0 right-0 w-1/3 h-64 opacity-10">
-          <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" className="w-full h-full object-cover" />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               About the Workshop
@@ -243,40 +239,24 @@ export default function Home() {
           <div className="text-center mb-8">
             <h3 className="text-lg font-semibold text-gray-600 mb-6">Supported By</h3>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            <div className="flex flex-col items-center">
-              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-300 rounded-xl shadow-lg p-4">
-                <div className="text-center">
-                  <p className="text-red-700 font-extrabold text-2xl">H.F.R.I.</p>
-                  <p className="text-xs text-red-600 mt-2 font-semibold">HELLENIC FOUNDATION</p>
-                </div>
+            <div className="flex flex-wrap justify-center items-center gap-8">
+              <div className="bg-red-600 rounded-lg p-6 shadow-lg">
+                <p className="text-white font-bold text-xl text-center">H.F.R.I.</p>
+                <p className="text-red-100 text-xs text-center mt-1">Hellenic Foundation</p>
+              </div>
+              <div className="bg-blue-600 rounded-lg p-6 shadow-lg">
+                <p className="text-white font-bold text-xl text-center">Greece 2.0</p>
+                <p className="text-blue-100 text-xs text-center mt-1">Recovery Plan</p>
+              </div>
+              <div className="bg-indigo-700 rounded-lg p-6 shadow-lg">
+                <p className="text-white font-bold text-xl text-center">NKUA</p>
+                <p className="text-indigo-100 text-xs text-center mt-1">University of Athens</p>
+              </div>
+              <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
+                <p className="text-white font-bold text-xl text-center">ΝΣΣΔΛ</p>
+                <p className="text-gray-300 text-xs text-center mt-1">Naxos School</p>
               </div>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-blue-50 to-green-50 border-2 border-blue-300 rounded-xl shadow-lg p-4">
-                <div className="text-center">
-                  <p className="font-extrabold text-2xl"><span className="text-blue-700">Greece</span> <span className="text-green-600">2.0</span></p>
-                  <p className="text-xs text-gray-700 mt-2 font-semibold">RECOVERY PLAN</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-400 rounded-xl shadow-lg p-4">
-                <div className="text-center">
-                  <p className="text-blue-900 font-extrabold text-2xl">NKUA</p>
-                  <p className="text-xs text-blue-700 mt-2 font-semibold">UNIVERSITY OF ATHENS</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-28 w-44 flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-950 border-2 border-slate-600 rounded-xl shadow-lg p-4">
-                <div className="text-center">
-                  <p className="text-white font-extrabold text-3xl tracking-widest">ΝΣΣΔΛ</p>
-                  <p className="text-slate-200 text-xs mt-2 font-semibold tracking-wide">NAXOS SCHOOL</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -300,21 +280,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-blue-200"
               >
-                <div className="md:flex">
-                  <div className="md:w-48 h-48 md:h-auto overflow-hidden flex-shrink-0">
-                    <img 
-                      src={`https://images.pexels.com/photos/${[256417, 2531546, 159711, 256455, 415071][index]}/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400`}
-                      alt=""
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-8 flex-1 text-center md:text-left flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
-                    <p className="text-primary-600 font-medium">{speaker.institution}</p>
-                  </div>
-                </div>
+                <div className="text-4xl font-bold text-blue-600 mb-4">{index + 1}</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
+                <p className="text-gray-600 font-medium">{speaker.institution}</p>
               </motion.div>
             ))}
           </div>
@@ -322,9 +292,8 @@ export default function Home() {
       </section>
 
       {/* Invited Speakers Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url('https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=1920')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -353,8 +322,8 @@ export default function Home() {
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     className="flex items-center py-4 border-b border-gray-200 last:border-0 hover:bg-primary-50 transition-colors rounded px-4"
                   >
-                    <span className="w-3 h-3 bg-gradient-to-r from-primary-600 to-blue-600 rounded-full mr-5 flex-shrink-0"></span>
-                    <p className="text-lg font-semibold text-gray-800">{name}</p>
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-4 flex-shrink-0"></span>
+                    <p className="text-base font-medium text-gray-700">{name}</p>
                   </motion.li>
                 ))}
               </ul>
