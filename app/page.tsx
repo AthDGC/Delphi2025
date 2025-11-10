@@ -171,8 +171,11 @@ export default function Home() {
       </motion.div>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
+        <div className="absolute top-0 right-0 w-1/3 h-64 opacity-10">
+          <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               About the Workshop
@@ -299,8 +302,15 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div>
-                  <div className="p-8 text-center">
+                <div className="md:flex">
+                  <div className="md:w-48 h-48 md:h-auto overflow-hidden flex-shrink-0">
+                    <img 
+                      src={`https://images.pexels.com/photos/${[256417, 2531546, 159711, 256455, 415071][index]}/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400`}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-8 flex-1 text-center md:text-left flex flex-col justify-center">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
                     <p className="text-primary-600 font-medium">{speaker.institution}</p>
                   </div>
@@ -308,42 +318,46 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* All Invited Speakers */}
+      {/* Invited Speakers Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url('https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=1920')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 pt-12 border-t-2 border-gray-300"
           >
-            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Invited Speakers</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              {[
-                'Nikolaos Lavidas',
-                'Kiki Nikiforidou',
-                'Angeliki Geka',
-                'Anna Piata',
-                'Mirjam Fried',
-                'Francesca Dell\'Oro',
-                'Daniel Riaño Rufilanchas',
-                'Iván Andrés-Alba',
-                'Stavroula Kefala',
-                'Esteban Belmehdi',
-                'Ioanna Papadopoulou',
-                'Julien Razanajao'
-              ].map((name, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.03 }}
-                  className="bg-gradient-to-br from-white to-gray-50 rounded-lg shadow-sm p-4 text-center hover:shadow-md transition-shadow border border-gray-200"
-                >
-                  <p className="text-sm font-semibold text-gray-800">{name}</p>
-                </motion.div>
-              ))}
+            <h3 className="text-3xl font-extrabold text-gray-900 text-center mb-12">Invited Speakers</h3>
+            <div className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-10 border border-gray-200">
+              <ul className="space-y-4">
+                {[
+                  'Anna Piata',
+                  'Mirjam Fried',
+                  'Francesca Dell\'Oro',
+                  'Daniel Riaño Rufilanchas',
+                  'Iván Andrés-Alba',
+                  'Stavroula Kefala',
+                  'Esteban Belmehdi',
+                  'Ioanna Papadopoulou',
+                  'Julien Razanajao'
+                ].map((name, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    className="flex items-center py-4 border-b border-gray-200 last:border-0 hover:bg-primary-50 transition-colors rounded px-4"
+                  >
+                    <span className="w-3 h-3 bg-gradient-to-r from-primary-600 to-blue-600 rounded-full mr-5 flex-shrink-0"></span>
+                    <p className="text-lg font-semibold text-gray-800">{name}</p>
+                  </motion.li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         </div>
