@@ -1,0 +1,73 @@
+═══════════════════════════════════════════════════════════════════
+  GITHUB PAGES DEPLOYMENT - STEP BY STEP
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: Create Repository on GitHub
+───────────────────────────────────────────────────────────────────
+1. Go to: https://github.com/organizations/AthDiaCorpus/repositories/new
+   (Or https://github.com/new if using personal account)
+
+2. Fill in:
+   - Repository name: delphi2025
+   - Description: Digital Diachrony Workshop 2025 - Delphi, Greece
+   - Public repository
+   - DO NOT initialize with README/gitignore/license
+
+3. Click "Create repository"
+
+
+STEP 2: Initialize Git and Push Code
+───────────────────────────────────────────────────────────────────
+Run these commands in your terminal:
+
+cd c:\Users\nlavi\CascadeProjects\personal-website
+
+git init
+git add .
+git commit -m "Initial commit: Digital Diachrony Workshop 2025"
+git branch -M main
+git remote add origin https://github.com/AthDiaCorpus/delphi2025.git
+git push -u origin main
+
+
+STEP 3: Enable GitHub Pages
+───────────────────────────────────────────────────────────────────
+1. Go to: https://github.com/AthDiaCorpus/delphi2025/settings/pages
+
+2. Under "Build and deployment":
+   - Source: GitHub Actions
+   
+3. Click Save (if needed)
+
+
+STEP 4: Wait for Deployment
+───────────────────────────────────────────────────────────────────
+1. Go to: https://github.com/AthDiaCorpus/delphi2025/actions
+
+2. You'll see the "Deploy to GitHub Pages" workflow running
+
+3. Wait 1-2 minutes for it to complete (green checkmark)
+
+4. Your site will be live at:
+   https://athdiacorpus.github.io/delphi2025
+
+
+ALTERNATIVE: Using Personal GitHub Account
+───────────────────────────────────────────────────────────────────
+If you want to use github.com/nlavidas instead:
+
+git remote remove origin
+git remote add origin https://github.com/nlavidas/delphi2025.git
+git push -u origin main
+
+Site will be at: https://nlavidas.github.io/delphi2025
+
+
+═══════════════════════════════════════════════════════════════════
+  NEED HELP?
+═══════════════════════════════════════════════════════════════════
+- Full deployment guide: See DEPLOYMENT.md
+- GitHub Pages docs: https://docs.github.com/en/pages
+- Next.js static export: https://nextjs.org/docs/app/building-your-application/deploying/static-exports
+
+═══════════════════════════════════════════════════════════════════
