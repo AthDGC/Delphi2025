@@ -18,25 +18,25 @@ const keynotes = [
     name: 'Prof. Dag Trygve Truslew Haug',
     institution: 'University of Oslo, Norway',
     title: 'Valency Patterns in Historical Treebanks: Evidence from the PROIEL Corpus',
-    bio: 'Professor of Linguistics and Director of the PROIEL (Pragmatic Resources in Old Indo-European Languages) project. Leading authority on dependency grammar, computational philology, and the syntax of ancient Indo-European languages.'
+    bio: 'Professor of Linguistics at the University of Oslo and Director of the PROIEL (Pragmatic Resources in Old Indo-European Languages) project.'
   },
   {
     name: 'Prof. George Mikros',
     institution: 'University of Qatar',
     title: 'LLMs and the Stylometric Challenge of Ancient Greek Prose: Opportunities and Limitations',
-    bio: 'Professor of Computational Linguistics specializing in quantitative text analysis, stylometry, and authorship attribution for Greek texts. Pioneer in applying statistical methods to Ancient and Modern Greek.'
+    bio: 'Professor of Computational Linguistics at the University of Qatar, specializing in quantitative text analysis and stylometry.'
   },
   {
     name: 'Prof. Ioanna Sitaridou',
     institution: 'University of Cambridge, UK',
     title: 'From Romeyka to Digital Resources: Corpus-Based Approaches to Greek Dialectal Syntax',
-    bio: 'Professor of Spanish and Historical Linguistics, world expert on Greek dialectology and the endangered language Romeyka. Her research combines traditional dialectology with modern corpus methods.'
+    bio: 'Professor of Spanish and Historical Linguistics at the University of Cambridge, researching Greek dialectology and the endangered language Romeyka.'
   },
   {
     name: 'Dr. Alexander Tantos',
     institution: 'Aristotle University of Thessaloniki, Greece',
     title: 'Building and Querying Large-Scale Corpora for Modern Greek: Lessons for Historical Linguistics',
-    bio: 'Computational linguist specializing in corpus development and query systems for Modern and Medieval Greek. Developer of innovative tools for morphological analysis and syntactic annotation.'
+    bio: 'Computational linguist at Aristotle University of Thessaloniki, specializing in corpus development for Modern and Medieval Greek.'
   },
   {
     name: 'Prof. Dr. Carola Trips',
@@ -52,9 +52,9 @@ const schedule = {
     title: 'Opening & Foundations',
     sessions: [
       { time: '09:30', event: 'Welcome & Opening Remarks' },
-      { time: '10:00', event: 'Keynote 1: Prof. Dag Haug (Oslo)' },
+      { time: '10:00', event: 'Plenary: Prof. Dag Haug (Oslo)' },
       { time: '11:00', event: 'Coffee Break & Networking' },
-      { time: '11:30', event: 'Keynote 2: Prof. George Mikros (Qatar)' },
+      { time: '11:30', event: 'Plenary: Prof. George Mikros (Qatar)' },
       { time: '13:00', event: 'Lunch' },
       { time: '14:30', event: 'Roundtable: Methodology Exchange' },
       { time: '16:00', event: 'Coffee Break' },
@@ -67,15 +67,15 @@ const schedule = {
     date: 'Friday, November 28',
     title: 'Deep Dive & Planning',
     sessions: [
-      { time: '09:30', event: 'Keynote 3: Prof. Ioanna Sitaridou (Cambridge)' },
+      { time: '09:30', event: 'Plenary: Prof. Ioanna Sitaridou (Cambridge)' },
       { time: '11:00', event: 'Coffee Break' },
-      { time: '11:30', event: 'Keynote 4: Dr. Alexander Tantos (Thessaloniki)' },
+      { time: '11:30', event: 'Plenary: Dr. Alexander Tantos (Thessaloniki)' },
       { time: '13:00', event: 'Lunch' },
-      { time: '14:30', event: 'Keynote 5: Prof. Dr. Carola Trips (Mannheim)' },
+      { time: '14:30', event: 'Plenary: Prof. Dr. Carola Trips (Mannheim)' },
       { time: '16:00', event: 'Coffee Break' },
       { time: '16:30', event: 'Collaborative Planning Session' },
       { time: '18:00', event: 'End of Day' },
-      { time: '20:00', event: 'Gala Dinner with Live Music (Delphi)' }
+      { time: '20:00', event: 'Gala Dinner' }
     ]
   },
   day3: {
@@ -102,7 +102,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-primary-600">Digital Diachrony Workshop 2025</span>
+              <span className="text-xl font-bold text-primary-600">Delphi Workshop 2025</span>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a href="#about" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
@@ -141,7 +141,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
             >
-              Digital Diachrony Workshop 2025
+              Delphi Workshop 2025
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
@@ -437,15 +437,6 @@ export default function Home() {
               <div className="px-4 py-5 sm:p-0">
                 <dl className="sm:divide-y sm:divide-gray-200">
                   <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt className="text-sm font-medium text-gray-500">Email</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 flex items-center">
-                      <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-2" />
-                      <a href="mailto:delphi2025@uoa.gr" className="text-primary-600 hover:text-primary-500">
-                        delphi2025@uoa.gr
-                      </a>
-                    </dd>
-                  </div>
-                  <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Website</dt>
                     <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 flex items-center">
                       <GlobeAltIcon className="h-5 w-5 text-gray-400 mr-2" />
@@ -455,10 +446,10 @@ export default function Home() {
                     </dd>
                   </div>
                   <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt className="text-sm font-medium text-gray-500">Principal Investigator</dt>
+                    <dt className="text-sm font-medium text-gray-500">Organizers</dt>
                     <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                      <p className="font-medium">Prof. Nikolaos Lavidas</p>
-                      <p className="text-gray-600">National and Kapodistrian University of Athens</p>
+                      <p>Lavidas, Nikiforidou, Geka, Symeonidis, Chionidi, Tsiropina, Plakoutsi</p>
+                      <p className="mt-2 text-gray-600">National and Kapodistrian University of Athens</p>
                       <p className="mt-1">
                         <a href="mailto:nlavidas@enl.uoa.gr" className="text-primary-600 hover:text-primary-500">
                           nlavidas@enl.uoa.gr
