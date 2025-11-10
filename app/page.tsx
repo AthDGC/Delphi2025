@@ -166,14 +166,6 @@ export default function Home() {
                 <span>Delphi, Greece</span>
               </div>
             </motion.div>
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-primary-100"
-            >
-              An invitation-only workshop bringing together specialists in diachronic linguistics
-            </motion.p>
           </div>
         </div>
       </motion.div>
@@ -218,20 +210,6 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 We embrace "paddle-open-source" collaboration - informal, collegial exchange focused on building lasting research partnerships rather than formal presentations.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-start">
-                  <UserGroupIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Invitation-only workshop with specialists in diachronic linguistics</p>
-                </div>
-                <div className="flex items-start">
-                  <AcademicCapIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Distinguished plenary speakers</p>
-                </div>
-                <div className="flex items-start">
-                  <GlobeAltIcon className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Ancient Greek, Latin, Gothic, Old Church Slavonic, Biblical Hebrew, Syriac, Sanskrit</p>
-                </div>
-              </div>
             </motion.div>
           </div>
 

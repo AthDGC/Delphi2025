@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   themeColor: '#0ea5e9',
   openGraph: {
     title: 'Digital Diachrony Workshop 2025 | Delphi',
-    description: 'An invitation-only workshop bringing together specialists in diachronic linguistics',
+    description: 'An invitation-only workshop on Corpus-Based Approaches to Text Types and Language Change in Delphi',
     url: 'https://athdiacorpus.github.io/delphi2025',
     siteName: 'Digital Diachrony Workshop 2025',
     locale: 'en_US',
