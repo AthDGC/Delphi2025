@@ -54,13 +54,13 @@ const schedule = {
       { time: '09:30', event: 'Welcome & Opening Remarks' },
       { time: '10:00', event: 'Keynote 1: Prof. Dag Haug (Oslo)' },
       { time: '11:00', event: 'Coffee Break & Networking' },
-      { time: '11:30', event: 'Keynote 2: Prof. George Mikros (Qatar/Athens)' },
+      { time: '11:30', event: 'Keynote 2: Prof. George Mikros (Qatar)' },
       { time: '13:00', event: 'Lunch' },
       { time: '14:30', event: 'Roundtable: Methodology Exchange' },
       { time: '16:00', event: 'Coffee Break' },
       { time: '16:30', event: 'Paper Presentations (3 papers)' },
       { time: '18:00', event: 'End of Day' },
-      { time: '20:00', event: 'Welcome Reception (Arachova)' }
+      { time: '20:00', event: 'Welcome Reception' }
     ]
   },
   day2: {
@@ -371,7 +371,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">•</span>
-                  Main conference room (capacity 40)
+                  Main conference room
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">•</span>
@@ -409,8 +409,8 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Cultural Program</h4>
                   <ul className="space-y-1">
-                    <li>• Welcome reception in Arachova</li>
-                    <li>• Gala dinner with live music</li>
+                    <li>• Welcome reception</li>
+                    <li>• Gala dinner</li>
                     <li>• Guided tour of archaeological site</li>
                   </ul>
                 </div>
