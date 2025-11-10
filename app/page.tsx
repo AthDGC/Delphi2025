@@ -130,9 +130,14 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-blue-900 text-white py-24 sm:py-32 overflow-hidden"
+        className="relative text-white py-24 sm:py-32 overflow-hidden"
+        style={{
+          backgroundImage: "url('https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-blue-900/75 to-indigo-900/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <motion.h1 
@@ -257,6 +262,15 @@ export default function Home() {
               />
               <p className="text-xs text-gray-500 mt-2">NKUA</p>
             </div>
+            <div className="flex flex-col items-center">
+              <div className="h-20 px-6 flex items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg shadow-md hover:shadow-lg transition-all">
+                <div className="text-center">
+                  <p className="text-white font-bold text-lg leading-tight">Naxos School</p>
+                  <p className="text-blue-100 text-xs font-medium tracking-wider">DiaLing Project</p>
+                </div>
+              </div>
+              <p className="text-xs text-gray-500 mt-2">Naxos School</p>
+            </div>
           </div>
         </div>
       </section>
@@ -284,11 +298,12 @@ export default function Home() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="md:flex">
-                  <div className="md:flex-shrink-0 bg-gradient-to-br from-primary-500 to-blue-600 md:w-48 flex items-center justify-center p-8">
-                    <div className="text-white text-center">
-                      <div className="text-4xl font-bold mb-2">{index + 1}</div>
-                      <div className="text-sm uppercase tracking-wide">Keynote</div>
-                    </div>
+                  <div className="md:flex-shrink-0 md:w-48 overflow-hidden">
+                    <img 
+                      src={`https://images.pexels.com/photos/${[1438072, 1370296, 256455, 1181406, 256541][index]}/pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400`}
+                      alt="Speaker background"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="p-8 flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
