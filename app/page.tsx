@@ -1,6 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, MapPinIcon, CalendarIcon, UserGroupIcon, AcademicCapIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import logos from '../../content/logos.json';
+import homeContent from '../../content/home.json';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -131,7 +133,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="relative bg-cover bg-center text-white py-24 sm:py-32"
-        style={{ backgroundImage: "url('https://images.pexels.com/photos/164323/pexels-photo-164323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}
+        style={{ backgroundImage: `url(${homeContent.hero_background})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,7 +192,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ancient Manuscript" className="rounded-lg shadow-lg" />
+              <img src={homeContent.about_image} alt="Ancient Manuscript" className="rounded-lg shadow-lg" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -237,7 +239,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-gray-600 tracking-wider uppercase">Supported By</h3>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {[              { name: 'Hellenic Foundation for Research and Innovation', src: 'https://upload.wikimedia.org/wikipedia/el/thumb/7/72/Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg/320px-Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg.png', href: 'https://www.elidek.gr/en/homepage/' },              { name: 'Greece 2.0', src: 'https://upload.wikimedia.org/wikipedia/el/thumb/c/c3/Greece_2.0_logo.svg/320px-Greece_2.0_logo.svg.png', href: 'https://greece20.gov.gr/' },              { name: 'National and Kapodistrian University of Athens', src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/National_and_Kapodistrian_University_of_Athens_logo.svg/320px-National_and_Kapodistrian_University_of_Athens_logo.svg.png', href: 'https://en.uoa.gr/' },              { name: 'Naxos School of Diachronic Linguistics', src: 'https://via.placeholder.com/150x80.png?text=Naxos+School', href: '#' },              { name: 'Center for Hellenic Studies, Harvard University', src: 'https://via.placeholder.com/150x80.png?text=CHS+Harvard', href: 'https://chs.harvard.edu/' },              { name: 'Athens Diachronic Corpus', src: 'https://via.placeholder.com/150x80.png?text=AthDGC', href: '#' },            ].map((logo) => (
+            {logos.items.map((logo: { name: string; src: string; href: string }) => (
               <a key={logo.name} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex justify-center grayscale hover:grayscale-0 transition-all duration-300">
                 <img src={logo.src} alt={logo.name} className="h-16 object-contain" />
               </a>
@@ -379,7 +381,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <img src="https://images.pexels.com/photos/261045/pexels-photo-261045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="European Cultural Centre of Delphi" className="rounded-lg shadow-lg" />
+              <img src={homeContent.venue_image} alt="European Cultural Centre of Delphi" className="rounded-lg shadow-lg" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}

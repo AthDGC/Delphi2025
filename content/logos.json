@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Hellenic Foundation for Research and Innovation",
+      "src": "https://upload.wikimedia.org/wikipedia/el/thumb/7/72/Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg/320px-Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg.png",
+      "href": "https://www.elidek.gr/en/homepage/"
+    },
+    {
+      "name": "Greece 2.0",
+      "src": "https://upload.wikimedia.org/wikipedia/el/thumb/c/c3/Greece_2.0_logo.svg/320px-Greece_2.0_logo.svg.png",
+      "href": "https://greece20.gov.gr/"
+    },
+    {
+      "name": "National and Kapodistrian University of Athens",
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/National_and_Kapodistrian_University_of_Athens_logo.svg/320px-National_and_Kapodistrian_University_of_Athens_logo.svg.png",
+      "href": "https://en.uoa.gr/"
+    },
+    {
+      "name": "Naxos School of Diachronic Linguistics",
+      "src": "https://via.placeholder.com/150x80.png?text=Naxos+School",
+      "href": "#"
+    },
+    {
+      "name": "Center for Hellenic Studies, Harvard University",
+      "src": "https://via.placeholder.com/150x80.png?text=CHS+Harvard",
+      "href": "https://chs.harvard.edu/"
+    },
+    {
+      "name": "Athens Diachronic Corpus",
+      "src": "https://via.placeholder.com/150x80.png?text=AthDGC",
+      "href": "#"
+    }
+  ]
+}
