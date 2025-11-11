@@ -111,7 +111,7 @@ export default function Home() {
                 About
               </a>
               <a href="#keynotes" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                Plenary
+                Speakers
               </a>
               <a href="#program" className="border-transparent text-gray-700 hover:border-primary-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
                 Program
@@ -248,75 +248,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Keynote Speakers Section */}
+      {/* All Speakers Section */}
       <section id="keynotes" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Plenary Speakers
+              Speakers
             </h2>
             <p className="mt-4 text-xl text-gray-600">
               Distinguished scholars in the field
             </p>
           </div>
 
-          <div className="grid gap-8 lg:gap-12">
-            {keynotes.map((speaker, index) => (
+          <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { name: 'Dag Haug', institution: 'University of Oslo, Norway', type: 'Plenary' },
+              { name: 'George Mikros', institution: 'University of Qatar, Qatar', type: 'Plenary' },
+              { name: 'Carola Trips', institution: 'University of Mannheim, Germany', type: 'Plenary' },
+              { name: 'Alexandros Tantos', institution: 'Aristotle University of Thessaloniki, Greece', type: 'Plenary' },
+              { name: 'Ioanna Sitaridou', institution: 'University of Cambridge, UK', type: 'Plenary' },
+              { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece', type: 'Invited' },
+              { name: 'Mirjam Fried', institution: 'Charles University, Prague, Czech Republic', type: 'Invited' },
+              { name: 'Francesca Dell\'Oro', institution: 'University of Bologna, Italy', type: 'Invited' },
+              { name: 'Daniel Riaño Rufilanchas', institution: 'CSIC, Spain', type: 'Invited' },
+              { name: 'Iván Andrés-Alba', institution: 'Universidad de Murcia, Spain', type: 'Invited' },
+              { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece', type: 'Invited' },
+              { name: 'Esteban Belmehdi', institution: 'CHS, Harvard University, USA', type: 'Invited' },
+              { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA', type: 'Invited' },
+              { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA', type: 'Invited' }
+            ].map((speaker, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-blue-200"
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-gray-200"
               >
-                <div className="text-4xl font-bold text-blue-600 mb-4">{index + 1}</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">{speaker.name}</h3>
-                <p className="text-lg text-gray-600 font-medium">{speaker.institution}</p>
+                <div className="inline-block px-3 py-1 mb-3 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+                  {speaker.type}
+                </div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
+                <p className="text-lg text-gray-600">{speaker.institution}</p>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Invited Speakers Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h3 className="text-3xl font-extrabold text-gray-900 text-center mb-12">Invited Speakers</h3>
-            <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece' },
-                { name: 'Mirjam Fried', institution: 'Charles University, Prague, Czech Republic' },
-                { name: 'Francesca Dell\'Oro', institution: 'University of Bologna, Italy' },
-                { name: 'Daniel Riaño Rufilanchas', institution: 'CSIC, Spain' },
-                { name: 'Iván Andrés-Alba', institution: 'Universidad de Murcia, Spain' },
-                { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece' },
-                { name: 'Esteban Belmehdi', institution: 'CHS, Harvard University, USA' },
-                { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA' },
-                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' }
-              ].map((speaker, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-gray-200"
-                >
-                  <h4 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
-                  {speaker.institution && (
-                    <p className="text-lg text-gray-600">{speaker.institution}</p>
-                  )}
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </section>
 

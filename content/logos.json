@@ -2,12 +2,12 @@
   "items": [
     {
       "name": "Hellenic Foundation for Research and Innovation",
-      "src": "/images/HFRI.png",
+      "src": "images/HFRI.png",
       "href": "https://www.elidek.gr/en/homepage/"
     },
     {
       "name": "Greece 2.0",
-      "src": "/images/Greece 2.0.png",
+      "src": "images/Greece 2.0.png",
       "href": "https://greece20.gov.gr/"
     },
     {
@@ -17,12 +17,12 @@
     },
     {
       "name": "European Cultural Centre of Delphi",
-      "src": "/images/delphi-eng-logo.svg",
+      "src": "images/Delphi-Eur Cultural Center-3.svg",
       "href": "https://eccd.gr/"
     },
     {
       "name": "Naxos School of Diachronic Linguistics",
-      "src": "/images/Naxos Diachronic Linguistics.jpg",
+      "src": "images/Naxos Diachronic Linguistics.jpg",
       "href": "#"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "name": "Athens Digital Glossa Chronos",
-      "src": "/images/Athens Digital Glossa Chronos (AthDGC).jpg",
+      "src": "images/Athens Digital Glossa Chronos (AthDGC).jpg",
       "href": "#"
     }
   ]
