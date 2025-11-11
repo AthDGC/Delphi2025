@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nlavidas.github.io/delphi-workshop-2025/sitemap.xml
