@@ -244,6 +244,43 @@ export default function Home() {
               In cooperation with the Naxos School project on Diachronic Linguistics.
             </p>
           </motion.div>
+
+          {/* Organizing Team */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-16"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900">Organizing Team</h3>
+              <p className="mt-2 text-gray-600">National and Kapodistrian University of Athens</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                'Nikolaos Lavidas',
+                'Kiki Nikiforidou',
+                'Vassiliki Geka',
+                'Vassileios Symeonidis',
+                'Sofia Chionidi',
+                'Anastasia Tsiropina',
+                'Eleni Plakoutsi',
+                'Theodoros Michalareas'
+              ].map((organizer, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow"
+                >
+                  <p className="text-gray-900 font-medium">{organizer}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
