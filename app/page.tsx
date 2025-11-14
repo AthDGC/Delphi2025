@@ -254,8 +254,8 @@ export default function Home() {
             className="mt-16"
           >
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-900">Organizing Team</h3>
-              <p className="mt-2 text-gray-600">National and Kapodistrian University of Athens</p>
+              <h3 className="text-2xl font-bold text-gray-900">Project Team (AthDGC)</h3>
+              <p className="mt-2 text-gray-600">Athens Digital Glossa Chronos | National and Kapodistrian University of Athens</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
@@ -416,7 +416,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -424,8 +424,8 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="space-y-4"
             >
-              <img src={homeContent.venue_image} alt="European Cultural Centre of Delphi" className="rounded-lg shadow-lg w-full" />
-              <img src="images/Delphi-Eur Cultural Center-2.webp" alt="Conference venue interior" className="rounded-lg shadow-lg w-full" />
+              <img src={homeContent.venue_image} alt="European Cultural Centre of Delphi" className="rounded-lg shadow-lg w-full h-auto" />
+              <img src="images/Delphi-Eur Cultural Center-2.webp" alt="Conference venue interior" className="rounded-lg shadow-lg w-full h-auto" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
