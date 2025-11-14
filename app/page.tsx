@@ -35,12 +35,6 @@ const keynotes = [
     talk: 'Enriching annotated corpora to identify contact-induced change: new tools and methods'
   },
   {
-    name: 'Daniel Riaño Rufilanchas',
-    institution: 'Autonomous University of Madrid, Spain',
-    title: 'Keynote Speaker',
-    talk: 'The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal'
-  },
-  {
     name: 'Alexandros Tantos',
     institution: 'Aristotle University of Thessaloniki, Greece',
     title: 'Keynote Speaker',
@@ -69,9 +63,9 @@ const schedule = {
       { time: '15:00', event: 'KEYNOTE: Enriching annotated corpora to identify contact-induced change: new tools and methods. By Carola Trips (60 min)' },
       { time: '16:00', event: 'Reportative constructions with inanimate subjects: The role of Latin and of genres in the evidential development of Italian volere. By Francesca Dell\'Oro (30 min)' },
       { time: '16:30', event: 'Coffee Break #2' },
-      { time: '17:00', event: 'KEYNOTE: The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal. By Daniel Riaño Rufilanchas (60 min)' },
-      { time: '18:00', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature. By Iván Andrés-Alba (30 min)' },
-      { time: '18:30', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising. By Stavroula Kefala (30 min)' },
+      { time: '17:00', event: 'The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal. By Daniel Riaño Rufilanchas (30 min)' },
+      { time: '17:30', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature. By Iván Andrés-Alba (30 min)' },
+      { time: '18:00', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising. By Stavroula Kefala (30 min)' },
       { time: '20:30', event: 'Dinner at Omphalos Tavern, Arachova' }
     ]
   },
@@ -302,7 +296,8 @@ export default function Home() {
                 { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece' },
                 { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA' },
                 { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece' },
-                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' }
+                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' },
+                { name: 'Daniel Riaño Rufilanchas', institution: 'Autonomous University of Madrid, Spain' }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
