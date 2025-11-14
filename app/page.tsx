@@ -218,7 +218,7 @@ export default function Home() {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                This workshop represents the culmination of a major research project funded by the Hellenic Foundation for Research and Innovation (HFRI/ELIDEK). We developed corpus-based valency lexicons for ancient and medieval languages using innovative computational methods integrated with traditional philological expertise.
+                This workshop represents the culmination of a major research project funded by the Hellenic Foundation for Research and Innovation (HFRI/ELIDEK). We are developing corpus-based valency lexicons for ancient and medieval languages using innovative computational methods integrated with traditional philological expertise.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Set in the inspiring archaeological site of Delphi - ancient center of wisdom and prophecy - we explore how corpus-based methods illuminate patterns of language change across millennia.
