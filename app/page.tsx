@@ -248,12 +248,12 @@ export default function Home() {
       </section>
 
       {/* Logos Section */}
-      <section className="py-16 bg-white border-y border-gray-200">
+      <section className="py-20 bg-white border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 items-center justify-items-center">
             {logos.items.map((logo: { name: string; src: string; href: string }) => (
-              <a key={logo.name} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:opacity-80 transition-all duration-300">
-                <img src={logo.src} alt={logo.name} className="h-24 object-contain" />
+              <a key={logo.name} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:opacity-80 hover:scale-105 transition-all duration-300">
+                <img src={logo.src} alt={logo.name} className="h-40 object-contain" />
               </a>
             ))}
           </div>
