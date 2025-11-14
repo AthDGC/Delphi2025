@@ -306,7 +306,7 @@ export default function Home() {
                 { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA' },
                 { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece' },
                 { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' },
-                { name: 'Daniel Riaño Rufilanchas', institution: 'Autonomous University of Madrid, Spain' }
+                { name: 'Daniel Riaño Rufilanchas', institution: 'ILC, CCHS-CSIC, Spain' }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
