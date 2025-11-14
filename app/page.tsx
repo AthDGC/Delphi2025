@@ -60,18 +60,18 @@ const schedule = {
     title: 'Opening & Foundations',
     sessions: [
       { time: '09:30', event: 'Registration & Welcome' },
-      { time: '09:45', event: 'Workshop Opening by Organizing Committee (30 min)' },
-      { time: '10:15', event: 'Presenting the Athens Digital Glossa Chronos (AthDGC) Project: Retranslations Across Millennia - Lavidas et al. (75 min)' },
+      { time: '09:45', event: 'Workshop Opening by the Organizing Committee: Nikolaos Lavidas, Kiki Nikiforidou, Vassiliki Geka, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi, Theodoros Michalareas (30 min)' },
+      { time: '10:15', event: 'Presenting the Athens Digital Glossa Chronos (AthDGC) Project, NKUA: Retranslations Across Millennia - A diachronic Contrastive Corpus for Studying Interlingual and Intralingual Contact. By Nikolaos Lavidas, Theodoros Michalareas, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi (75 min)' },
       { time: '11:30', event: 'Coffee Break #1' },
-      { time: '12:00', event: 'KEYNOTE: Diachronic corpora from Greek to Norwegian - Dag Haug (60 min)' },
-      { time: '13:00', event: 'Insubordination phenomena as a quintessential example of genre-dependent language change - Mirjam Fried (30 min)' },
+      { time: '12:00', event: 'KEYNOTE: Diachronic corpora from Greek to Norwegian: Lessons learned and future plans. By Dag Trygve Truslew Haug (60 min)' },
+      { time: '13:00', event: 'Insubordination phenomena as a quintessential example of \'genre\'-dependent language change. By Mirjam Fried (30 min)' },
       { time: '13:30', event: 'Lunch at European Cultural Centre' },
-      { time: '15:00', event: 'KEYNOTE: Enriching annotated corpora to identify contact-induced change - Carola Trips (60 min)' },
-      { time: '16:00', event: 'Reportative constructions with inanimate subjects - Francesca Dell\'Oro (30 min)' },
+      { time: '15:00', event: 'KEYNOTE: Enriching annotated corpora to identify contact-induced change: new tools and methods. By Carola Trips (60 min)' },
+      { time: '16:00', event: 'Reportative constructions with inanimate subjects: The role of Latin and of genres in the evidential development of Italian volere. By Francesca Dell\'Oro (30 min)' },
       { time: '16:30', event: 'Coffee Break #2' },
-      { time: '17:00', event: 'KEYNOTE: The semantic structured polysemy of the Ancient Greek Genitive - Daniel Riaño Rufilanchas (60 min)' },
-      { time: '18:00', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon - Iván Andrés-Alba (30 min)' },
-      { time: '18:30', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising - Stavroula Kefala (30 min)' },
+      { time: '17:00', event: 'KEYNOTE: The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal. By Daniel Riaño Rufilanchas (60 min)' },
+      { time: '18:00', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature. By Iván Andrés-Alba (30 min)' },
+      { time: '18:30', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising. By Stavroula Kefala (30 min)' },
       { time: '20:30', event: 'Dinner at Omphalos Tavern, Arachova' }
     ]
   },
@@ -79,18 +79,18 @@ const schedule = {
     date: 'Friday, November 28',
     title: 'Deep Dive & Collaboration',
     sessions: [
-      { time: '09:15', event: 'KEYNOTE: Authenticating the Artificial: LLMs and the Stylometric Challenge - George Mikros (60 min)' },
-      { time: '10:15', event: 'Arrested change and construction preservation in the context of genre - Kiki Nikiforidou (30 min)' },
+      { time: '09:15', event: 'KEYNOTE: Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose. By George Mikros (60 min)' },
+      { time: '10:15', event: 'Arrested change and construction preservation in the context of genre. The conservative effect of stage directions in English and Greek. By Kiki Nikiforidou (30 min)' },
       { time: '10:45', event: 'Coffee Break #3' },
-      { time: '11:15', event: 'Tracks to the past and genre dynamics in zero/that complementation - Vassiliki Geka (30 min)' },
-      { time: '11:45', event: 'Approaching anticipated events in the past: Linguistic, affective and genre-based motivations - Anna Piata (30 min)' },
+      { time: '11:15', event: 'Tracks to the past and genre dynamics in zero/that complementation of the verb \'think\'. By Vassiliki Geka (30 min)' },
+      { time: '11:45', event: 'Approaching anticipated events in the past: Linguistic, affective and genre-based motivations in language diachrony. By Anna Piata (30 min)' },
       { time: '12:15', event: 'Coffee Break #4' },
       { time: '12:45', event: 'Departure for the archaeological site of Delphi' },
       { time: '13:00', event: 'Guided Tour of Delphi Archaeological Site (2.5 hrs)' },
       { time: '16:00', event: 'Lunch at European Cultural Centre' },
-      { time: '17:30', event: 'KEYNOTE: AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle - Alexandros Tantos (60 min)' },
+      { time: '17:30', event: 'KEYNOTE: AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle. By Alexandros Tantos (60 min)' },
       { time: '18:30', event: 'Coffee Break #5' },
-      { time: '19:00', event: 'KEYNOTE: Title TBA - Ioanna Sitaridou (60 min)' },
+      { time: '19:00', event: 'KEYNOTE: Title TBA. By Ioanna Sitaridou (60 min)' },
       { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
     ]
   },
@@ -98,12 +98,12 @@ const schedule = {
     date: 'Saturday, November 29',
     title: 'Technology & Future Directions',
     sessions: [
-      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages - ARCAS Team (CHS Harvard) & AthDGC (60 min)' },
+      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
       { time: '10:30', event: 'Coffee Break #6' },
       { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
       { time: '12:00', event: 'Closing Ceremony (30 min)' },
       { time: '12:30', event: 'Lunch at European Cultural Centre' },
-      { time: '14:30', event: 'Departure to Athens' }
+      { time: '14:30', event: 'Departure' }
     ]
   }
 };
