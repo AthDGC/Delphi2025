@@ -49,6 +49,15 @@ const keynotes = [
 ];
 
 const schedule = {
+  day0: {
+    date: 'Wednesday, November 26',
+    title: 'Arrival Day',
+    sessions: [
+      { time: '15:30', event: 'Departure from Syntagma Square, Athens' },
+      { time: '19:00', event: 'Arrival at Delphi (approx.)' },
+      { time: '20:30', event: 'Welcome Dinner at Vakhos Taverna in Delphi' }
+    ]
+  },
   day1: {
     date: 'Thursday, November 27',
     title: 'Opening & Foundations',
@@ -141,7 +150,7 @@ export default function Home() {
         className="relative bg-cover bg-center text-white py-24 sm:py-32"
         style={{ backgroundImage: `url(${homeContent.hero_background})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <motion.h1 
@@ -168,7 +177,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <CalendarIcon className="h-6 w-6 mr-2" />
-                <span>November 27-29, 2025</span>
+                <span>November 26-29, 2025</span>
               </div>
               <div className="flex items-center">
                 <MapPinIcon className="h-6 w-6 mr-2" />
@@ -187,7 +196,7 @@ export default function Home() {
               About the Workshop
             </h2>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              An intensive three-day workshop at the heart of ancient Delphi
+              An intensive four-day workshop at the heart of ancient Delphi
             </p>
           </div>
 
@@ -321,14 +330,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Three-Day Program
+              Four-Day Program
             </h2>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              November 27-29, 2025
+              November 26-29, 2025
             </p>
           </div>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {Object.entries(schedule).map(([key, day], index) => (
               <motion.div
                 key={key}
