@@ -17,29 +17,40 @@ const fadeIn = {
 
 const keynotes = [
   {
-    name: 'Dag Haug',
+    name: 'Dag Trygve Truslew Haug',
     institution: 'University of Oslo, Norway',
-    title: 'Plenary Speaker'
+    title: 'Keynote Speaker',
+    talk: 'Diachronic corpora from Greek to Norwegian: Lessons learned and future plans'
   },
   {
     name: 'George Mikros',
     institution: 'University of Qatar, Qatar',
-    title: 'Plenary Speaker'
+    title: 'Keynote Speaker',
+    talk: 'Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose'
   },
   {
     name: 'Carola Trips',
     institution: 'University of Mannheim, Germany',
-    title: 'Plenary Speaker'
+    title: 'Keynote Speaker',
+    talk: 'Enriching annotated corpora to identify contact-induced change: new tools and methods'
+  },
+  {
+    name: 'Daniel Riaño Rufilanchas',
+    institution: 'Autonomous University of Madrid, Spain',
+    title: 'Keynote Speaker',
+    talk: 'The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal'
   },
   {
     name: 'Alexandros Tantos',
     institution: 'Aristotle University of Thessaloniki, Greece',
-    title: 'Plenary Speaker'
+    title: 'Keynote Speaker',
+    talk: 'AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle'
   },
   {
     name: 'Ioanna Sitaridou',
     institution: 'University of Cambridge, UK',
-    title: 'Plenary Speaker'
+    title: 'Keynote Speaker',
+    talk: 'Title TBA'
   }
 ];
 
@@ -49,36 +60,37 @@ const schedule = {
     title: 'Opening & Foundations',
     sessions: [
       { time: '09:30', event: 'Registration & Welcome' },
-      { time: '09:45', event: 'Workshop Opening: Organizing Committee (30 min)' },
-      { time: '10:15', event: 'Project Presentation: Lavidas et al. (75 min)' },
-      { time: '11:30', event: 'Coffee Break' },
-      { time: '12:00', event: 'Plenary: Dag Haug (60 min)' },
-      { time: '13:00', event: 'Fried (30 min)' },
+      { time: '09:45', event: 'Workshop Opening by Organizing Committee (30 min)' },
+      { time: '10:15', event: 'Presenting the Athens Digital Glossa Chronos (AthDGC) Project: Retranslations Across Millennia - Lavidas et al. (75 min)' },
+      { time: '11:30', event: 'Coffee Break #1' },
+      { time: '12:00', event: 'KEYNOTE: Diachronic corpora from Greek to Norwegian - Dag Haug (60 min)' },
+      { time: '13:00', event: 'Insubordination phenomena as a quintessential example of genre-dependent language change - Mirjam Fried (30 min)' },
       { time: '13:30', event: 'Lunch at European Cultural Centre' },
-      { time: '15:00', event: 'Plenary: Carola Trips (60 min)' },
-      { time: '16:00', event: 'Francesca Dell\'Oro (30 min)' },
-      { time: '16:30', event: 'Coffee Break' },
-      { time: '17:00', event: 'Daniel Riaño Rufilanchas (60 min)' },
-      { time: '18:00', event: 'Iván Andrés-Alba (30 min)' },
-      { time: '18:30', event: 'Stavroula Kefala (30 min)' },
-      { time: '20:30', event: 'Dinner in Arachova Village' }
+      { time: '15:00', event: 'KEYNOTE: Enriching annotated corpora to identify contact-induced change - Carola Trips (60 min)' },
+      { time: '16:00', event: 'Reportative constructions with inanimate subjects - Francesca Dell\'Oro (30 min)' },
+      { time: '16:30', event: 'Coffee Break #2' },
+      { time: '17:00', event: 'KEYNOTE: The semantic structured polysemy of the Ancient Greek Genitive - Daniel Riaño Rufilanchas (60 min)' },
+      { time: '18:00', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon - Iván Andrés-Alba (30 min)' },
+      { time: '18:30', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising - Stavroula Kefala (30 min)' },
+      { time: '20:30', event: 'Dinner at Omphalos Tavern, Arachova' }
     ]
   },
   day2: {
     date: 'Friday, November 28',
     title: 'Deep Dive & Collaboration',
     sessions: [
-      { time: '09:30', event: 'Plenary: George Mikros (60 min)' },
-      { time: '10:30', event: 'Coffee Break' },
-      { time: '11:00', event: 'Nikiforidou (30 min)' },
-      { time: '11:30', event: 'Geka (30 min)' },
-      { time: '12:00', event: 'Piata (30 min)' },
-      { time: '12:30', event: 'Departure for Archaeological Site' },
-      { time: '13:00', event: 'Guided Tour of Delphi (2.5 hrs)' },
+      { time: '09:15', event: 'KEYNOTE: Authenticating the Artificial: LLMs and the Stylometric Challenge - George Mikros (60 min)' },
+      { time: '10:15', event: 'Arrested change and construction preservation in the context of genre - Kiki Nikiforidou (30 min)' },
+      { time: '10:45', event: 'Coffee Break #3' },
+      { time: '11:15', event: 'Tracks to the past and genre dynamics in zero/that complementation - Vassiliki Geka (30 min)' },
+      { time: '11:45', event: 'Approaching anticipated events in the past: Linguistic, affective and genre-based motivations - Anna Piata (30 min)' },
+      { time: '12:15', event: 'Coffee Break #4' },
+      { time: '12:45', event: 'Departure for the archaeological site of Delphi' },
+      { time: '13:00', event: 'Guided Tour of Delphi Archaeological Site (2.5 hrs)' },
       { time: '16:00', event: 'Lunch at European Cultural Centre' },
-      { time: '17:30', event: 'Plenary: Alexandros Tantos (60 min)' },
-      { time: '18:30', event: 'Coffee Break' },
-      { time: '19:00', event: 'Plenary: Ioanna Sitaridou (60 min)' },
+      { time: '17:30', event: 'KEYNOTE: AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle - Alexandros Tantos (60 min)' },
+      { time: '18:30', event: 'Coffee Break #5' },
+      { time: '19:00', event: 'KEYNOTE: Title TBA - Ioanna Sitaridou (60 min)' },
       { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
     ]
   },
@@ -86,8 +98,8 @@ const schedule = {
     date: 'Saturday, November 29',
     title: 'Technology & Future Directions',
     sessions: [
-      { time: '09:30', event: 'Special Session: ARCAS Team, CHS Harvard & AthDGC (60 min)' },
-      { time: '10:30', event: 'Coffee Break' },
+      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages - ARCAS Team (CHS Harvard) & AthDGC (60 min)' },
+      { time: '10:30', event: 'Coffee Break #6' },
       { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
       { time: '12:00', event: 'Closing Ceremony (30 min)' },
       { time: '12:30', event: 'Lunch at European Cultural Centre' },
@@ -152,7 +164,7 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mt-4 text-xl sm:text-2xl font-light"
             >
-              Corpus-Based Approaches to Text Types and Language Change in Delphi
+              Corpora and Diachrony: Influential Texts, Text Types and Genres
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
@@ -257,17 +269,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Plenary Speakers */}
+          {/* Keynote Speakers */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Plenary Speakers</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Keynote Speakers</h3>
             <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                { name: 'Dag Haug', institution: 'University of Oslo, Norway' },
-                { name: 'George Mikros', institution: 'University of Qatar, Qatar' },
-                { name: 'Ioanna Sitaridou', institution: 'University of Cambridge, UK' },
-                { name: 'Alexandros Tantos', institution: 'Aristotle University of Thessaloniki, Greece' },
-                { name: 'Carola Trips', institution: 'University of Mannheim, Germany' }
-              ].map((speaker, index) => (
+              {keynotes.map((speaker, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -276,8 +282,9 @@ export default function Home() {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-gray-200"
                 >
-                  <h4 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
-                  <p className="text-lg text-gray-600">{speaker.institution}</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
+                  <p className="text-base text-gray-600 mb-2">{speaker.institution}</p>
+                  <p className="text-sm text-gray-500 italic">{speaker.talk}</p>
                 </motion.div>
               ))}
             </div>
@@ -295,8 +302,7 @@ export default function Home() {
                 { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece' },
                 { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA' },
                 { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece' },
-                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' },
-                { name: 'Daniel Riaño Rufilanchas', institution: 'CSIC, Spain' }
+                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
