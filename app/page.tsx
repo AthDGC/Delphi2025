@@ -443,7 +443,7 @@ export default function Home() {
                   <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Organizers</dt>
                     <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                      <p>Nikolaos Lavidas, Kiki Nikiforidou, Vassiliki Geka, Vassileios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi</p>
+                      <p>Nikolaos Lavidas, Kiki Nikiforidou, Vassiliki Geka, Vassileios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi, Theodoros Michalareas</p>
                       <p className="mt-2 text-gray-600">National and Kapodistrian University of Athens</p>
                       <p className="mt-1">
                         <a href="mailto:nlavidas@enl.uoa.gr" className="text-primary-600 hover:text-primary-500">
