@@ -1,8 +1,12 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, MapPinIcon, CalendarIcon, UserGroupIcon, AcademicCapIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import logos from '../content/logos.json';
 import homeContent from '../content/home.json';
+import abstractsData from '../content/abstracts.json';
+import SimpleModal from './components/SimpleModal';
+import ClickableSpeakerText from './components/ClickableSpeakerText';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -20,31 +24,36 @@ const keynotes = [
     name: 'Dag Trygve Truslew Haug',
     institution: 'University of Oslo, Norway',
     title: 'Keynote Speaker',
-    talk: 'Diachronic corpora from Greek to Norwegian: Lessons learned and future plans'
+    talk: 'Diachronic corpora from Greek to Norwegian: Lessons learned and future plans',
+    abstractKey: 'dag-haug'
   },
   {
     name: 'George Mikros',
     institution: 'University of Qatar, Qatar',
     title: 'Keynote Speaker',
-    talk: 'Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose'
+    talk: 'Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose',
+    abstractKey: 'george-mikros'
   },
   {
     name: 'Carola Trips',
     institution: 'University of Mannheim, Germany',
     title: 'Keynote Speaker',
-    talk: 'Enriching annotated corpora to identify contact-induced change: new tools and methods'
+    talk: 'Enriching annotated corpora to identify contact-induced change: new tools and methods',
+    abstractKey: 'carola-trips'
   },
   {
     name: 'Alexandros Tantos',
     institution: 'Aristotle University of Thessaloniki, Greece',
     title: 'Keynote Speaker',
-    talk: 'AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle'
+    talk: 'AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle',
+    abstractKey: 'alexandros-tantos'
   },
   {
     name: 'Ioanna Sitaridou',
     institution: 'University of Cambridge, UK',
     title: 'Keynote Speaker',
-    talk: 'Title TBA'
+    talk: 'Title TBA',
+    abstractKey: 'ioanna-sitaridou'
   }
 ];
 
@@ -112,6 +121,25 @@ const schedule = {
 };
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedAbstract, setSelectedAbstract] = useState<{
+    speaker: string;
+    title: string;
+    abstract: string;
+  } | null>(null);
+
+  const openAbstractModal = (abstractKey: string) => {
+    const abstract = abstractsData.abstracts[abstractKey as keyof typeof abstractsData.abstracts];
+    if (abstract) {
+      setSelectedAbstract({
+        speaker: abstract.name,
+        title: abstract.title,
+        abstract: abstract.abstract
+      });
+      setModalOpen(true);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -153,7 +181,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -161,7 +189,7 @@ export default function Home() {
             >
               Delphi Workshop 2025
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -169,7 +197,7 @@ export default function Home() {
             >
               Corpora and Diachrony: Influential Texts, Text Types and Genres
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
@@ -218,7 +246,7 @@ export default function Home() {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                This workshop represents the culmination of a major research project funded by the Hellenic Foundation for Research and Innovation (HFRI/ELIDEK). We are developing corpus-based valency lexicons for ancient and medieval languages using innovative computational methods integrated with traditional philological expertise.
+                This workshop represents the culmination of a major research project funded by the Hellenic Foundation for Research and Innovation (HFRI/ELIDEK). We are developing corpus-based valency lexica for ancient and medieval languages using innovative computational methods integrated with traditional philological expertise.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Set in the inspiring archaeological site of Delphi - ancient center of wisdom and prophecy - we explore how corpus-based methods illuminate patterns of language change across millennia.
@@ -320,11 +348,13 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-gray-200"
+                  onClick={() => openAbstractModal(speaker.abstractKey)}
+                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
                 >
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
                   <p className="text-base text-gray-600 mb-2">{speaker.institution}</p>
-                  <p className="text-sm text-gray-500 italic">{speaker.talk}</p>
+                  <p className="text-sm text-gray-500 italic mb-3">{speaker.talk}</p>
+                  <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
                 </motion.div>
               ))}
             </div>
@@ -335,15 +365,15 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Invited Speakers</h3>
             <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { name: 'Iván Andrés-Alba', institution: 'Universidad de Murcia, Spain' },
-                { name: 'Esteban Belmehdi', institution: 'CHS, Harvard University, USA' },
-                { name: 'Francesca Dell\'Oro', institution: 'University of Bologna, Italy' },
-                { name: 'Mirjam Fried', institution: 'Charles University, Prague, Czech Republic' },
-                { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece' },
-                { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA' },
-                { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece' },
-                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA' },
-                { name: 'Daniel Riaño Rufilanchas', institution: 'ILC, CCHS-CSIC, Spain' }
+                { name: 'Iván Andrés-Alba', institution: 'Universidad de Murcia, Spain', abstractKey: 'ivan-andres' },
+                { name: 'Esteban Belmehdi', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
+                { name: 'Francesca Dell\'Oro', institution: 'University of Bologna, Italy', abstractKey: 'francesca-delloro' },
+                { name: 'Mirjam Fried', institution: 'Charles University, Prague, Czech Republic', abstractKey: 'mirjam-fried' },
+                { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece', abstractKey: 'stavroula-kefala' },
+                { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
+                { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece', abstractKey: 'anna-piata' },
+                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
+                { name: 'Daniel Riaño Rufilanchas', institution: 'ILC, CCHS-CSIC, Spain', abstractKey: 'daniel-riano' }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
@@ -351,12 +381,14 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-gray-200"
+                  onClick={() => openAbstractModal(speaker.abstractKey)}
+                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
                 >
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
-                  <p className="text-lg text-gray-600">{speaker.institution}</p>
+                  <p className="text-lg text-gray-600 mb-3">{speaker.institution}</p>
+                  <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
                 </motion.div>
-              ))}
+              ))
             </div>
           </div>
         </div>
@@ -393,7 +425,9 @@ export default function Home() {
                     {day.sessions.map((session, idx) => (
                       <div key={idx} className="flex items-start border-l-2 border-primary-200 pl-4 py-2">
                         <span className="text-sm font-semibold text-primary-600 min-w-[60px]">{session.time}</span>
-                        <span className="text-sm text-gray-700 ml-3">{session.event}</span>
+                        <div className="ml-3">
+                          <ClickableSpeakerText text={session.event} onSpeakerClick={openAbstractModal} />
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -545,6 +579,17 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* Abstract Modal */}
+      {selectedAbstract && (
+        <SimpleModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          speaker={selectedAbstract.speaker}
+          title={selectedAbstract.title}
+          abstract={selectedAbstract.abstract}
+        />
+      )}
     </div>
   );
 }
