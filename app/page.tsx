@@ -361,19 +361,19 @@ export default function Home() {
           </div>
 
           {/* Invited Speakers */}
-          <div>
+          <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Invited Speakers</h3>
             <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { name: "Iván Andrés-Alba", institution: "Universidad de Murcia, Spain", abstractKey: "ivan-andres" },
-                { name: "Esteban Belmehdi", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
-                { name: "Francesca Dell'Oro", institution: "University of Bologna, Italy", abstractKey: "francesca-delloro" },
-                { name: "Mirjam Fried", institution: "Charles University, Prague, Czech Republic", abstractKey: "mirjam-fried" },
-                { name: "Stavroula Kefala", institution: "Hellenic Open University, Greece", abstractKey: "stavroula-kefala" },
-                { name: "Ioanna Papadopoulou", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
-                { name: "Anna Piata", institution: "National and Kapodistrian University of Athens, Greece", abstractKey: "anna-piata" },
-                { name: "Julien Razanajao", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
-                { name: "Daniel Riaño Rufilanchas", institution: "ILC, CCHS-CSIC, Spain", abstractKey: "daniel-riano" }
+                { name: "Iván Andrés-Alba", institution: "Universidad de Murcia, Spain", talk: "On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature", abstractKey: "ivan-andres" },
+                { name: "Francesca Dell'Oro", institution: "University of Bologna, Italy", talk: "Reportative constructions with inanimate subjects: The role of Latin and of genres in the evidential development of Italian volere", abstractKey: "francesca-delloro" },
+                { name: "Mirjam Fried", institution: "Charles University, Prague, Czech Republic", talk: "Insubordination phenomena as a quintessential example of 'genre'-dependent language change", abstractKey: "mirjam-fried" },
+                { name: "Stavroula Kefala", institution: "Hellenic Open University, Greece", talk: "Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising", abstractKey: "stavroula-kefala" },
+                { name: "Kiki Nikiforidou", institution: "National and Kapodistrian University of Athens, Greece", talk: "Arrested change and construction preservation in the context of genre. The conservative effect of stage directions in English and Greek", abstractKey: "kiki-nikiforidou" },
+                { name: "Vassiliki Geka", institution: "National and Kapodistrian University of Athens, Greece", talk: "Tracks to the past and genre dynamics in zero/that complementation of the verb 'think'", abstractKey: "vassiliki-geka" },
+                { name: "Anna Piata", institution: "National and Kapodistrian University of Athens, Greece", talk: "Approaching anticipated events in the past: Linguistic, affective and genre-based motivations in language diachrony", abstractKey: "anna-piata" },
+                { name: "Daniel Riaño Rufilanchas", institution: "ILC, CCHS-CSIC, Spain", talk: "The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal", abstractKey: "daniel-riano" },
+                { name: "Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao", institution: "ARCAS Team, CHS, Harvard University, USA", talk: "Technology in the Service of Classical and Historical Languages", abstractKey: "chs-team" }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
@@ -384,11 +384,35 @@ export default function Home() {
                   onClick={() => openAbstractModal(speaker.abstractKey)}
                   className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
                 >
-                  <h4 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
-                  <p className="text-lg text-gray-600 mb-3">{speaker.institution}</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
+                  <p className="text-base text-gray-600 mb-2">{speaker.institution}</p>
+                  <p className="text-sm text-gray-700 italic mb-3 line-clamp-3">{speaker.talk}</p>
                   <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+
+          {/* Project Presentation */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Project Presentation</h3>
+            <div className="max-w-3xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                onClick={() => openAbstractModal("lavidas-team")}
+                className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all border-2 border-primary-300 cursor-pointer hover:scale-105"
+              >
+                <h4 className="text-2xl font-bold text-primary-900 mb-3">Nikolaos Lavidas et al.</h4>
+                <p className="text-lg text-gray-700 mb-2">Athens Digital Glossa Chronos (AthDGC)</p>
+                <p className="text-base text-gray-600 mb-4">National and Kapodistrian University of Athens</p>
+                <p className="text-base text-gray-800 font-medium italic mb-4">
+                  Retranslations Across Millennia: A diachronic Contrastive Corpus for Studying Interlingual and Intralingual Contact
+                </p>
+                <p className="text-xs text-primary-700 font-semibold">Click for full abstract</p>
+              </motion.div>
             </div>
           </div>
         </div>
