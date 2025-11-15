@@ -396,22 +396,21 @@ export default function Home() {
           {/* Project Presentation */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Project Presentation</h3>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
                 onClick={() => openAbstractModal("lavidas-team")}
-                className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all border-2 border-primary-300 cursor-pointer hover:scale-105"
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
               >
-                <h4 className="text-2xl font-bold text-primary-900 mb-3">Nikolaos Lavidas et al.</h4>
-                <p className="text-lg text-gray-700 mb-2">Athens Digital Glossa Chronos (AthDGC)</p>
-                <p className="text-base text-gray-600 mb-4">National and Kapodistrian University of Athens</p>
-                <p className="text-base text-gray-800 font-medium italic mb-4">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Nikolaos Lavidas, Theodoros Michalareas, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi</h4>
+                <p className="text-base text-gray-600 mb-2">Athens Digital Glossa Chronos (AthDGC) | National and Kapodistrian University of Athens</p>
+                <p className="text-sm text-gray-700 italic mb-3">
                   Retranslations Across Millennia: A diachronic Contrastive Corpus for Studying Interlingual and Intralingual Contact
                 </p>
-                <p className="text-xs text-primary-700 font-semibold">Click for full abstract</p>
+                <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
               </motion.div>
             </div>
           </div>
