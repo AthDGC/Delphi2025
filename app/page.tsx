@@ -348,13 +348,16 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  onClick={() => openAbstractModal(speaker.abstractKey)}
-                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
+                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200"
                 >
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
                   <p className="text-base text-gray-600 mb-2">{speaker.institution}</p>
-                  <p className="text-sm text-gray-500 italic mb-3">{speaker.talk}</p>
-                  <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
+                  <button
+                    onClick={() => openAbstractModal(speaker.abstractKey)}
+                    className="text-sm text-gray-700 italic mb-3 hover:text-primary-600 transition-colors cursor-pointer text-left w-full underline decoration-dotted hover:decoration-solid"
+                  >
+                    {speaker.talk}
+                  </button>
                 </motion.div>
               ))}
             </div>
@@ -381,13 +384,16 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  onClick={() => openAbstractModal(speaker.abstractKey)}
-                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
+                  className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-all border border-gray-200"
                 >
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{speaker.name}</h4>
                   <p className="text-base text-gray-600 mb-2">{speaker.institution}</p>
-                  <p className="text-sm text-gray-700 italic mb-3 line-clamp-3">{speaker.talk}</p>
-                  <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
+                  <button
+                    onClick={() => openAbstractModal(speaker.abstractKey)}
+                    className="text-sm text-gray-700 italic mb-3 hover:text-primary-600 transition-colors cursor-pointer text-left w-full underline decoration-dotted hover:decoration-solid line-clamp-3"
+                  >
+                    {speaker.talk}
+                  </button>
                 </motion.div>
               ))}
             </div>
@@ -402,15 +408,16 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
-                onClick={() => openAbstractModal("lavidas-team")}
-                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all border border-gray-200 cursor-pointer hover:scale-105 hover:border-primary-500"
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all border border-gray-200 text-center"
               >
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Nikolaos Lavidas, Theodoros Michalareas, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi</h4>
                 <p className="text-base text-gray-600 mb-2">Athens Digital Glossa Chronos (AthDGC) | National and Kapodistrian University of Athens</p>
-                <p className="text-sm text-gray-700 italic mb-3">
+                <button
+                  onClick={() => openAbstractModal("lavidas-team")}
+                  className="text-sm text-gray-700 italic mb-3 hover:text-primary-600 transition-colors cursor-pointer underline decoration-dotted hover:decoration-solid"
+                >
                   Retranslations Across Millennia: A diachronic Contrastive Corpus for Studying Interlingual and Intralingual Contact
-                </p>
-                <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
+                </button>
               </motion.div>
             </div>
           </div>
