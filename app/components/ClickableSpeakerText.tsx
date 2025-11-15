@@ -31,7 +31,7 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
     // Parse the text and make titles clickable, not names
     const renderText = () => {
         // Check for "By [Speaker Name]" pattern
-        const byPattern = /^(.+?)\.\s+By\s+([^(]+?)(?:\s+\(|$)/;
+        const byPattern = /^(.+?)\s+By\s+([^(]+?)(\s+\(.*)?$/;
         const match = text.match(byPattern);
 
         if (!match) {
@@ -41,7 +41,7 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
 
         const title = match[1].trim();
         const speakerName = match[2].trim();
-        const remainingText = text.substring(match[0].length);
+        const remainingText = match[3] || '';
 
         // Find the abstract key for this speaker
         let abstractKey: string | null = null;
@@ -59,7 +59,7 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
 
         return (
             <>
-                {/* Clickable title */}
+                {/* Clickable title with period */}
                 <button
                     onClick={(e) => {
                         e.stopPropagation();
@@ -69,10 +69,11 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
                 >
                     {title}
                 </button>
-                <span>. By </span>
+                {'. '}
+                <span>By </span>
                 {/* Non-clickable speaker name in bold */}
                 <span className="font-semibold">{speakerName}</span>
-                <span>{remainingText}</span>
+                {remainingText}
             </>
         );
     };
