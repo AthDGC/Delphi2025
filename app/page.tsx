@@ -365,15 +365,15 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Invited Speakers</h3>
             <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { name: 'Iván Andrés-Alba', institution: 'Universidad de Murcia, Spain', abstractKey: 'ivan-andres' },
-                { name: 'Esteban Belmehdi', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
-                { name: 'Francesca Dell\'Oro', institution: 'University of Bologna, Italy', abstractKey: 'francesca-delloro' },
-                { name: 'Mirjam Fried', institution: 'Charles University, Prague, Czech Republic', abstractKey: 'mirjam-fried' },
-                { name: 'Stavroula Kefala', institution: 'Hellenic Open University, Greece', abstractKey: 'stavroula-kefala' },
-                { name: 'Ioanna Papadopoulou', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
-                { name: 'Anna Piata', institution: 'National and Kapodistrian University of Athens, Greece', abstractKey: 'anna-piata' },
-                { name: 'Julien Razanajao', institution: 'CHS, Harvard University, USA', abstractKey: 'chs-team' },
-                { name: 'Daniel Riaño Rufilanchas', institution: 'ILC, CCHS-CSIC, Spain', abstractKey: 'daniel-riano' }
+                { name: "Iván Andrés-Alba", institution: "Universidad de Murcia, Spain", abstractKey: "ivan-andres" },
+                { name: "Esteban Belmehdi", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
+                { name: "Francesca Dell'Oro", institution: "University of Bologna, Italy", abstractKey: "francesca-delloro" },
+                { name: "Mirjam Fried", institution: "Charles University, Prague, Czech Republic", abstractKey: "mirjam-fried" },
+                { name: "Stavroula Kefala", institution: "Hellenic Open University, Greece", abstractKey: "stavroula-kefala" },
+                { name: "Ioanna Papadopoulou", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
+                { name: "Anna Piata", institution: "National and Kapodistrian University of Athens, Greece", abstractKey: "anna-piata" },
+                { name: "Julien Razanajao", institution: "CHS, Harvard University, USA", abstractKey: "chs-team" },
+                { name: "Daniel Riaño Rufilanchas", institution: "ILC, CCHS-CSIC, Spain", abstractKey: "daniel-riano" }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}
@@ -388,7 +388,7 @@ export default function Home() {
                   <p className="text-lg text-gray-600 mb-3">{speaker.institution}</p>
                   <p className="text-xs text-primary-600 font-semibold">Click for abstract</p>
                 </motion.div>
-              ))
+              ))}
             </div>
           </div>
         </div>
