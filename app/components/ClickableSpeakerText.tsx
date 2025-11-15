@@ -28,92 +28,53 @@ const speakerMap: { [key: string]: string } = {
 };
 
 export default function ClickableSpeakerText({ text, onSpeakerClick }: ClickableSpeakerTextProps) {
-    // Parse the text and identify speaker names
+    // Parse the text and make titles clickable, not names
     const renderText = () => {
-        let result: React.ReactNode[] = [];
-        let remainingText = text;
-        let lastIndex = 0;
-
         // Check for "By [Speaker Name]" pattern
-        const byPattern = /By\s+([^(]+?)(?:\s+\(|\s*$)/g;
-        let match;
-        const matches: { name: string; index: number; length: number }[] = [];
+        const byPattern = /^(.+?)\.\s+By\s+([^(]+?)(?:\s+\(|$)/;
+        const match = text.match(byPattern);
 
-        while ((match = byPattern.exec(text)) !== null) {
-            const speakerName = match[1].trim();
-            // Check if this name or a partial match exists in our speaker map
-            let abstractKey: string | null = null;
-            for (const [key, value] of Object.entries(speakerMap)) {
-                if (speakerName.includes(key) || key.includes(speakerName)) {
-                    abstractKey = value;
-                    break;
-                }
-            }
-
-            if (abstractKey) {
-                matches.push({
-                    name: speakerName,
-                    index: match.index,
-                    length: match[0].length - (match[0].endsWith('(') ? 1 : 0)
-                });
-            }
-        }
-
-        // If no matches, return plain text
-        if (matches.length === 0) {
+        if (!match) {
+            // No "By" pattern found, return plain text
             return <span>{text}</span>;
         }
 
-        // Build the result with clickable names
-        matches.forEach((matchData, idx) => {
-            // Add text before the match
-            if (matchData.index > lastIndex) {
-                result.push(
-                    <span key={`text-${idx}`}>
-                        {text.substring(lastIndex, matchData.index)}
-                    </span>
-                );
+        const title = match[1].trim();
+        const speakerName = match[2].trim();
+        const remainingText = text.substring(match[0].length);
+
+        // Find the abstract key for this speaker
+        let abstractKey: string | null = null;
+        for (const [key, value] of Object.entries(speakerMap)) {
+            if (speakerName.includes(key) || key.includes(speakerName)) {
+                abstractKey = value;
+                break;
             }
-
-            // Find the abstract key for this speaker
-            let abstractKey: string | null = null;
-            for (const [key, value] of Object.entries(speakerMap)) {
-                if (matchData.name.includes(key) || key.includes(matchData.name)) {
-                    abstractKey = value;
-                    break;
-                }
-            }
-
-            // Add "By " text
-            result.push(<span key={`by-${idx}`}>By </span>);
-
-            // Add clickable speaker name
-            if (abstractKey) {
-                result.push(
-                    <button
-                        key={`speaker-${idx}`}
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            onSpeakerClick(abstractKey!);
-                        }}
-                        className="text-primary-600 hover:text-primary-700 font-semibold underline decoration-dotted hover:decoration-solid"
-                    >
-                        {matchData.name}
-                    </button>
-                );
-            } else {
-                result.push(<span key={`speaker-${idx}`}>{matchData.name}</span>);
-            }
-
-            lastIndex = matchData.index + matchData.length;
-        });
-
-        // Add remaining text
-        if (lastIndex < text.length) {
-            result.push(<span key="text-end">{text.substring(lastIndex)}</span>);
         }
 
-        return <>{result}</>;
+        if (!abstractKey) {
+            // No matching speaker found, return plain text
+            return <span>{text}</span>;
+        }
+
+        return (
+            <>
+                {/* Clickable title */}
+                <button
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        onSpeakerClick(abstractKey!);
+                    }}
+                    className="text-gray-700 hover:text-primary-600 transition-colors underline decoration-dotted hover:decoration-solid text-left"
+                >
+                    {title}
+                </button>
+                <span>. By </span>
+                {/* Non-clickable speaker name in bold */}
+                <span className="font-semibold">{speakerName}</span>
+                <span>{remainingText}</span>
+            </>
+        );
     };
 
     return <span className="text-sm text-gray-700">{renderText()}</span>;
