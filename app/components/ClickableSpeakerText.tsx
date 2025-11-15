@@ -59,7 +59,7 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
 
         return (
             <>
-                {/* Clickable title with period */}
+                {/* Clickable title (already includes period) */}
                 <button
                     onClick={(e) => {
                         e.stopPropagation();
@@ -69,7 +69,7 @@ export default function ClickableSpeakerText({ text, onSpeakerClick }: Clickable
                 >
                     {title}
                 </button>
-                {'. '}
+                {' '}
                 <span>By </span>
                 {/* Non-clickable speaker name in bold */}
                 <span className="font-semibold">{speakerName}</span>
