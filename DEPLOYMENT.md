@@ -7,7 +7,7 @@
 1. **Create GitHub Repository**
    ```bash
    # On GitHub.com, create a new repository named: delphi2025
-   # Organization: AthDiaCorpus
+   # Organization: athdgc
    # Make it public
    ```
 
@@ -17,7 +17,7 @@
    git add .
    git commit -m "Initial commit: Digital Diachrony Workshop 2025"
    git branch -M main
-   git remote add origin https://github.com/AthDiaCorpus/delphi2025.git
+   git remote add origin https://github.com/athdgc/delphi2025.git
    git push -u origin main
    ```
 
@@ -27,7 +27,7 @@
    - The workflow will automatically deploy on every push!
 
 4. **Your Site Will Be Live At:**
-   https://athdiacorpus.github.io/delphi2025
+   https://athdgc.github.io/delphi2025
 
 ### Manual Deploy (Alternative)
 

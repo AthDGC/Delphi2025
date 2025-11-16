@@ -6,7 +6,7 @@ This file contains all workshop content for reference and backup purposes.
 - **Title:** Digital Diachrony 2025: Corpus-Based Approaches to Text Types and Language Change  
 - **Dates:** November 27-29, 2025
 - **Location:** European Cultural Centre of Delphi, Greece
-- **Website:** https://athdiacorpus.github.io/delphi2025
+- **Website:** https://athdgc.github.io/delphi2025
 - **Email:** delphi2025@uoa.gr
 - **GitHub:** https://github.com/nlavidas
 
@@ -30,7 +30,7 @@ Ancient Greek, Latin, Gothic, Old Church Slavonic, Biblical Hebrew, Syriac, Sans
 ## Social Media
 - Twitter/X: @DigitalDiachrony
 - Instagram: @delphi2025workshop
-- GitHub: github.com/AthDiaCorpus
+- GitHub: github.com/athdgc
 - Hashtags: #DigitalDiachrony2025 #DelphiWorkshop
 
 ## Technical Setup

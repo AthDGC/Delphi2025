@@ -605,7 +605,7 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-8 text-center text-base text-gray-400">
-            &copy; {new Date().getFullYear()} Nikolaos Lavidas. All rights reserved.
+            Licensed under the MIT License
           </p>
         </div>
       </footer>

@@ -62,7 +62,7 @@ GitHub: [@nlavidas](https://github.com/nlavidas)
 
 - **Dates:** November 27-29, 2025
 - **Location:** Delphi, Greece
-- **Website:** https://athdiacorpus.github.io/delphi2025
+- **Website:** https://athdgc.github.io/delphi2025
 - **Email:** delphi2025@uoa.gr
 
 ## License
