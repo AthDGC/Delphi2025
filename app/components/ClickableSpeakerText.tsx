@@ -18,6 +18,7 @@ const speakerMap: { [key: string]: string } = {
     'Daniel Riaño Rufilanchas': 'daniel-riano',
     'Iván Andrés-Alba': 'ivan-andres',
     'Stavroula Kefala': 'stavroula-kefala',
+    'Claudio Iacobini': 'claudio-iacobini',
     'Kiki Nikiforidou': 'kiki-nikiforidou',
     'Vassiliki Geka': 'vassiliki-geka',
     'Anna Piata': 'anna-piata',
