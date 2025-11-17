@@ -608,7 +608,7 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-8 text-center text-base text-gray-400">
-            Licensed under the MIT License
+            Licensed under CC BY-NC-SA 4.0
           </p>
         </div>
       </footer>
