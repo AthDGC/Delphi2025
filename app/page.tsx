@@ -293,10 +293,10 @@ export default function Home() {
                 'Vassiliki Geka',
                 'Vassileios Symeonidis',
                 'Sofia Chionidi',
-                'Evangelos Argyropoulos',
                 'Anastasia Tsiropina',
                 'Eleni Plakoutsi',
-                'Theodoros Michalareas'
+                'Theodoros Michalareas',
+                'Evangelos Argyropoulos'
               ].map((organizer, index) => (
                 <motion.div
                   key={index}
