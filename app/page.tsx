@@ -293,6 +293,7 @@ export default function Home() {
                 'Vassiliki Geka',
                 'Vassileios Symeonidis',
                 'Sofia Chionidi',
+                'Evangelos Argyropoulos',
                 'Anastasia Tsiropina',
                 'Eleni Plakoutsi',
                 'Theodoros Michalareas'
