@@ -45,7 +45,7 @@ const keynotes = [
     name: 'Alexandros Tantos',
     institution: 'Aristotle University of Thessaloniki, Greece',
     title: 'Keynote Speaker',
-    talk: 'AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle',
+    talk: 'From Network Theory to Linguistic Insights',
     abstractKey: 'alexandros-tantos'
   },
   {
@@ -84,6 +84,7 @@ const schedule = {
       { time: '17:00', event: 'The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal. By Daniel Riaño Rufilanchas (30 min)' },
       { time: '17:30', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature. By Iván Andrés-Alba (30 min)' },
       { time: '18:00', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising. By Stavroula Kefala (30 min)' },
+      { time: '18:30', event: 'Survival and revival of Latin derivational patterns in Romance languages. General trends and individual histories. By Claudio Iacobini (30 min)' },
       { time: '20:30', event: 'Dinner at Omphalos Tavern, Arachova' }
     ]
   },
@@ -100,7 +101,7 @@ const schedule = {
       { time: '12:45', event: 'Departure for the archaeological site of Delphi' },
       { time: '13:00', event: 'Guided Tour of Delphi Archaeological Site (2.5 hrs)' },
       { time: '16:00', event: 'Lunch at European Cultural Centre' },
-      { time: '17:30', event: 'KEYNOTE: AI as a Calibrated Partner: Accelerating and Validating the Corpus Annotation–Analysis Cycle. By Alexandros Tantos (60 min)' },
+      { time: '17:30', event: 'KEYNOTE: From Network Theory to Linguistic Insights. By Alexandros Tantos (60 min)' },
       { time: '18:30', event: 'Coffee Break #5' },
       { time: '19:00', event: 'KEYNOTE: Title TBA. By Ioanna Sitaridou (60 min)' },
       { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
@@ -372,6 +373,7 @@ export default function Home() {
                 { name: "Francesca Dell'Oro", institution: "University of Bologna, Italy", talk: "Reportative constructions with inanimate subjects: The role of Latin and of genres in the evidential development of Italian volere", abstractKey: "francesca-delloro" },
                 { name: "Mirjam Fried", institution: "Charles University, Prague, Czech Republic", talk: "Insubordination phenomena as a quintessential example of 'genre'-dependent language change", abstractKey: "mirjam-fried" },
                 { name: "Stavroula Kefala", institution: "Hellenic Open University, Greece", talk: "Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising", abstractKey: "stavroula-kefala" },
+                { name: "Claudio Iacobini", institution: "University of Salerno, Italy", talk: "Survival and revival of Latin derivational patterns in Romance languages. General trends and individual histories", abstractKey: "claudio-iacobini" },
                 { name: "Kiki Nikiforidou", institution: "National and Kapodistrian University of Athens, Greece", talk: "Arrested change and construction preservation in the context of genre. The conservative effect of stage directions in English and Greek", abstractKey: "kiki-nikiforidou" },
                 { name: "Vassiliki Geka", institution: "National and Kapodistrian University of Athens, Greece", talk: "Tracks to the past and genre dynamics in zero/that complementation of the verb 'think'", abstractKey: "vassiliki-geka" },
                 { name: "Anna Piata", institution: "National and Kapodistrian University of Athens, Greece", talk: "Approaching anticipated events in the past: Linguistic, affective and genre-based motivations in language diachrony", abstractKey: "anna-piata" },
