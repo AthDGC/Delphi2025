@@ -52,7 +52,7 @@ const keynotes = [
     name: 'Ioanna Sitaridou',
     institution: 'University of Cambridge, UK',
     title: 'Keynote Speaker',
-    talk: 'Title TBA',
+    talk: 'Cue-based reconstruction: what annotated corpora can and cannot help with',
     abstractKey: 'ioanna-sitaridou'
   }
 ];
@@ -102,8 +102,8 @@ const schedule = {
       { time: '13:00', event: 'Guided Tour of Delphi Archaeological Site (2.5 hrs)' },
       { time: '16:00', event: 'Lunch at European Cultural Centre' },
       { time: '17:30', event: 'KEYNOTE: From Network Theory to Linguistic Insights. By Alexandros Tantos (60 min)' },
-      { time: '18:30', event: 'Coffee Break' },
-      { time: '19:00', event: 'KEYNOTE: Title TBA. By Ioanna Sitaridou (60 min)' },
+      { time: '18:30', event: 'Coffee Break #5' },
+      { time: '19:00', event: 'KEYNOTE: Cue-based reconstruction: what annotated corpora can and cannot help with. By Ioanna Sitaridou (60 min)' },
       { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
     ]
   },
