@@ -29,7 +29,7 @@ const keynotes = [
   },
   {
     name: 'George Mikros',
-    institution: 'University of Qatar, Qatar',
+    institution: 'Hamad Bin Khalifa University (HBKU), Qatar',
     title: 'Keynote Speaker',
     talk: 'Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose',
     abstractKey: 'george-mikros'
