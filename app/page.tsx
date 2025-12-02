@@ -29,7 +29,7 @@ const keynotes = [
   },
   {
     name: 'George Mikros',
-    institution: 'University of Qatar, Qatar',
+    institution: 'Hamad Bin Khalifa University (HBKU), Qatar',
     title: 'Keynote Speaker',
     talk: 'Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose',
     abstractKey: 'george-mikros'
@@ -52,7 +52,7 @@ const keynotes = [
     name: 'Ioanna Sitaridou',
     institution: 'University of Cambridge, UK',
     title: 'Keynote Speaker',
-    talk: 'Title TBA',
+    talk: 'Cue-based reconstruction: what annotated corpora can and cannot help with',
     abstractKey: 'ioanna-sitaridou'
   }
 ];
@@ -74,13 +74,13 @@ const schedule = {
       { time: '09:30', event: 'Registration & Welcome' },
       { time: '09:45', event: 'Workshop Opening by the Organizing Committee: Nikolaos Lavidas, Kiki Nikiforidou, Vassiliki Geka, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi, Theodoros Michalareas (30 min)' },
       { time: '10:15', event: 'Presenting the Athens Digital Glossa Chronos (AthDGC) Project, NKUA: Retranslations Across Millennia - A diachronic Contrastive Corpus for Studying Interlingual and Intralingual Contact. By Nikolaos Lavidas, Theodoros Michalareas, Vassilios Symeonidis, Sofia Chionidi, Anastasia Tsiropina, Eleni Plakoutsi (75 min)' },
-      { time: '11:30', event: 'Coffee Break #1' },
+      { time: '11:30', event: 'Coffee Break' },
       { time: '12:00', event: 'KEYNOTE: Diachronic corpora from Greek to Norwegian: Lessons learned and future plans. By Dag Trygve Truslew Haug (60 min)' },
       { time: '13:00', event: 'Insubordination phenomena as a quintessential example of \'genre\'-dependent language change. By Mirjam Fried (30 min)' },
       { time: '13:30', event: 'Lunch at European Cultural Centre' },
       { time: '15:00', event: 'KEYNOTE: Enriching annotated corpora to identify contact-induced change: new tools and methods. By Carola Trips (60 min)' },
       { time: '16:00', event: 'Reportative constructions with inanimate subjects: The role of Latin and of genres in the evidential development of Italian volere. By Francesca Dell\'Oro (30 min)' },
-      { time: '16:30', event: 'Coffee Break #2' },
+      { time: '16:30', event: 'Coffee Break' },
       { time: '17:00', event: 'The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal. By Daniel Riaño Rufilanchas (30 min)' },
       { time: '17:30', event: 'On speakers and influential texts: Homeric epics and the anatomical lexicon in Greek literature. By Iván Andrés-Alba (30 min)' },
       { time: '18:00', event: 'Grammar in Motion: Diachronic Variation and the Linguistic Adaptability of Advertising. By Stavroula Kefala (30 min)' },
@@ -94,16 +94,16 @@ const schedule = {
     sessions: [
       { time: '09:15', event: 'KEYNOTE: Authenticating the Artificial: LLMs and the Stylometric Challenge of Ancient Greek Prose. By George Mikros (60 min)' },
       { time: '10:15', event: 'Arrested change and construction preservation in the context of genre. The conservative effect of stage directions in English and Greek. By Kiki Nikiforidou (30 min)' },
-      { time: '10:45', event: 'Coffee Break #3' },
+      { time: '10:45', event: 'Coffee Break' },
       { time: '11:15', event: 'Tracks to the past and genre dynamics in zero/that complementation of the verb \'think\'. By Vassiliki Geka (30 min)' },
       { time: '11:45', event: 'Approaching anticipated events in the past: Linguistic, affective and genre-based motivations in language diachrony. By Anna Piata (30 min)' },
-      { time: '12:15', event: 'Coffee Break #4' },
+      { time: '12:15', event: 'Coffee Break' },
       { time: '12:45', event: 'Departure for the archaeological site of Delphi' },
       { time: '13:00', event: 'Guided Tour of Delphi Archaeological Site (2.5 hrs)' },
       { time: '16:00', event: 'Lunch at European Cultural Centre' },
       { time: '17:30', event: 'KEYNOTE: From Network Theory to Linguistic Insights. By Alexandros Tantos (60 min)' },
       { time: '18:30', event: 'Coffee Break #5' },
-      { time: '19:00', event: 'KEYNOTE: Title TBA. By Ioanna Sitaridou (60 min)' },
+      { time: '19:00', event: 'KEYNOTE: Cue-based reconstruction: what annotated corpora can and cannot help with. By Ioanna Sitaridou (60 min)' },
       { time: '21:00', event: 'Gala Dinner at Vakhos Tavern' }
     ]
   },
@@ -111,8 +111,13 @@ const schedule = {
     date: 'Saturday, November 29',
     title: 'Technology & Future Directions',
     sessions: [
+<<<<<<< HEAD
       { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao, Mark Schiefsky (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
       { time: '10:30', event: 'Coffee Break #6' },
+=======
+      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
+      { time: '10:30', event: 'Coffee Break' },
+>>>>>>> 76f2729862d9c1573a59ff844b402ac32520ea2b
       { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
       { time: '12:00', event: 'Closing Ceremony (30 min)' },
       { time: '12:30', event: 'Lunch at European Cultural Centre' },
