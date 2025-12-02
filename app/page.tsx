@@ -111,7 +111,7 @@ const schedule = {
     date: 'Saturday, November 29',
     title: 'Technology & Future Directions',
     sessions: [
-      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
+      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao, Mark Schiefsky (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
       { time: '10:30', event: 'Coffee Break #6' },
       { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
       { time: '12:00', event: 'Closing Ceremony (30 min)' },
@@ -379,7 +379,7 @@ export default function Home() {
                 { name: "Vassiliki Geka", institution: "National and Kapodistrian University of Athens, Greece", talk: "Tracks to the past and genre dynamics in zero/that complementation of the verb 'think'", abstractKey: "vassiliki-geka" },
                 { name: "Anna Piata", institution: "National and Kapodistrian University of Athens, Greece", talk: "Approaching anticipated events in the past: Linguistic, affective and genre-based motivations in language diachrony", abstractKey: "anna-piata" },
                 { name: "Daniel Riaño Rufilanchas", institution: "ILC, CCHS-CSIC, Spain", talk: "The semantic structured polysemy of the Ancient Greek Genitive: a holistic proposal", abstractKey: "daniel-riano" },
-                { name: "Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao", institution: "ARCAS Team, CHS, Harvard University, USA", talk: "Technology in the Service of Classical and Historical Languages", abstractKey: "chs-team" }
+                { name: "Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao, Mark Schiefsky", institution: "ARCAS Team, CHS, Harvard University, USA", talk: "Technology in the Service of Classical and Historical Languages", abstractKey: "chs-team" }
               ].map((speaker, index) => (
                 <motion.div
                   key={index}

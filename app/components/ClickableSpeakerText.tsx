@@ -25,7 +25,8 @@ const speakerMap: { [key: string]: string } = {
     'Nikolaos Lavidas': 'lavidas-team',
     'Esteban Belmehdi': 'chs-team',
     'Ioanna Papadopoulou': 'chs-team',
-    'Julien Razanajao': 'chs-team'
+    'Julien Razanajao': 'chs-team',
+    'Mark Schiefsky': 'chs-team'
 };
 
 export default function ClickableSpeakerText({ text, onSpeakerClick }: ClickableSpeakerTextProps) {
