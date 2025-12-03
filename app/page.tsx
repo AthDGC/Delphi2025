@@ -111,13 +111,8 @@ const schedule = {
     date: 'Saturday, November 29',
     title: 'Technology & Future Directions',
     sessions: [
-<<<<<<< HEAD
       { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao, Mark Schiefsky (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
       { time: '10:30', event: 'Coffee Break #6' },
-=======
-      { time: '09:30', event: 'Special Session: Technology in the Service of Classical and Historical Languages. By Esteban Belmehdi, Ioanna Papadopoulou, Julien Razanajao (ARCAS Team, CHS Harvard University), and joint work with AthDGC, NKUA (60 min)' },
-      { time: '10:30', event: 'Coffee Break' },
->>>>>>> 76f2729862d9c1573a59ff844b402ac32520ea2b
       { time: '11:00', event: 'Final Discussion: Planning Next Project (60 min)' },
       { time: '12:00', event: 'Closing Ceremony (30 min)' },
       { time: '12:30', event: 'Lunch at European Cultural Centre' },
