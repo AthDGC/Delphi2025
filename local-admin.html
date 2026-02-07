@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CMS - Local Editor</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/logos/athdgc-favicon.jpg?v=6">
+    <link rel="shortcut icon" href="assets/logos/athdgc-favicon.jpg?v=6">
+    <link rel="apple-touch-icon" href="assets/logos/athdgc-favicon.jpg">
+
     <style>
+        /* CSS remains unchanged but now the block is correctly closed */
         * {
             margin: 0;
             padding: 0;
@@ -113,10 +119,6 @@
             padding: 20px;
             margin-bottom: 30px;
         }
-    <link rel="shortcut icon" href="assets/logos/athdgc-favicon.jpg?v=5">
-<link rel="icon" type="image/jpeg" href="assets/logos/athdgc-favicon.jpg?v=5">
-<link rel="apple-touch-icon" href="assets/logos/athdgc-favicon.jpg">
-        }
         .instructions ol {
             margin-left: 20px;
             color: #856404;
@@ -141,10 +143,7 @@
             font-size: 12px;
         }
     </style>
- 
-    <link rel="icon" type="image/jpeg" href="athdgc-favicon.jpg?v=2">
 </head>
-    
 <body>
     <div class="container">
         <h1>📝 Simple CMS - Local Editor</h1>
@@ -161,27 +160,22 @@
             </ol>
         </div>
 
-        <!-- Home Page Images Section -->
         <div class="section">
             <h2>🖼️ Homepage Images</h2>
-            
             <div class="form-group">
                 <label>Hero Background Image URL</label>
                 <input type="url" id="hero_background" placeholder="https://example.com/image.jpg">
             </div>
-            
             <div class="form-group">
                 <label>About Section Image URL</label>
                 <input type="url" id="about_image" placeholder="https://example.com/image.jpg">
             </div>
-            
             <div class="form-group">
                 <label>Venue Section Image URL</label>
                 <input type="url" id="venue_image" placeholder="https://example.com/image.jpg">
             </div>
         </div>
 
-        <!-- Logos Section -->
         <div class="section">
             <h2>🏢 Partner Logos</h2>
             <div id="logos-container"></div>
@@ -197,38 +191,14 @@
     </div>
 
     <script>
-        // Initial data
+        // Your existing script remains identical
         const initialLogos = [
-            {
-                "name": "Hellenic Foundation for Research and Innovation",
-                "src": "https://upload.wikimedia.org/wikipedia/el/thumb/7/72/Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg/320px-Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg.png",
-                "href": "https://www.elidek.gr/en/homepage/"
-            },
-            {
-                "name": "Greece 2.0",
-                "src": "https://upload.wikimedia.org/wikipedia/el/thumb/c/c3/Greece_2.0_logo.svg/320px-Greece_2.0_logo.svg.png",
-                "href": "https://greece20.gov.gr/"
-            },
-            {
-                "name": "National and Kapodistrian University of Athens",
-                "src": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/National_and_Kapodistrian_University_of_Athens_logo.svg/320px-National_and_Kapodistrian_University_of_Athens_logo.svg.png",
-                "href": "https://en.uoa.gr/"
-            },
-            {
-                "name": "Naxos School of Diachronic Linguistics",
-                "src": "https://via.placeholder.com/150x80.png?text=Naxos+School",
-                "href": "#"
-            },
-            {
-                "name": "Center for Hellenic Studies, Harvard University",
-                "src": "https://via.placeholder.com/150x80.png?text=CHS+Harvard",
-                "href": "https://chs.harvard.edu/"
-            },
-            {
-                "name": "Athens Diachronic Corpus",
-                "src": "https://via.placeholder.com/150x80.png?text=AthDGC",
-                "href": "#"
-            }
+            { "name": "Hellenic Foundation for Research and Innovation", "src": "https://upload.wikimedia.org/wikipedia/el/thumb/7/72/Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg/320px-Logo_of_the_Hellenic_Foundation_for_Research_and_Innovation.svg.png", "href": "https://www.elidek.gr/en/homepage/" },
+            { "name": "Greece 2.0", "src": "https://upload.wikimedia.org/wikipedia/el/thumb/c/c3/Greece_2.0_logo.svg/320px-Greece_2.0_logo.svg.png", "href": "https://greece20.gov.gr/" },
+            { "name": "National and Kapodistrian University of Athens", "src": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/National_and_Kapodistrian_University_of_Athens_logo.svg/320px-National_and_Kapodistrian_University_of_Athens_logo.svg.png", "href": "https://en.uoa.gr/" },
+            { "name": "Naxos School of Diachronic Linguistics", "src": "https://via.placeholder.com/150x80.png?text=Naxos+School", "href": "#" },
+            { "name": "Center for Hellenic Studies, Harvard University", "src": "https://via.placeholder.com/150x80.png?text=CHS+Harvard", "href": "https://chs.harvard.edu/" },
+            { "name": "Athens Diachronic Corpus", "src": "https://via.placeholder.com/150x80.png?text=AthDGC", "href": "#" }
         ];
 
         const initialHome = {
@@ -237,17 +207,12 @@
             "venue_image": "https://eccd.gr/wp-content/uploads/2021/07/DSC_3589_s-1-1024x683.jpg"
         };
 
-        // Load initial data
         function loadData() {
-            // Load home images
             document.getElementById('hero_background').value = initialHome.hero_background;
             document.getElementById('about_image').value = initialHome.about_image;
             document.getElementById('venue_image').value = initialHome.venue_image;
-
-            // Load logos
             const container = document.getElementById('logos-container');
             container.innerHTML = '';
-            
             initialLogos.forEach((logo, index) => {
                 const logoDiv = document.createElement('div');
                 logoDiv.className = 'logo-item';
@@ -270,25 +235,17 @@
             });
         }
 
-        // Export files
         function exportFiles() {
-            // Collect home data
             const homeData = {
                 hero_background: document.getElementById('hero_background').value,
                 about_image: document.getElementById('about_image').value,
                 venue_image: document.getElementById('venue_image').value
             };
-
-            // Collect logos data
-            const logosData = {
-                items: []
-            };
-
+            const logosData = { items: [] };
             for (let i = 0; i < initialLogos.length; i++) {
                 const nameInput = document.getElementById(`logo_name_${i}`);
                 const srcInput = document.getElementById(`logo_src_${i}`);
                 const hrefInput = document.getElementById(`logo_href_${i}`);
-                
                 if (nameInput && srcInput && hrefInput) {
                     logosData.items.push({
                         name: nameInput.value,
@@ -297,21 +254,11 @@
                     });
                 }
             }
-
-            // Download home.json
             downloadJSON(homeData, 'home.json');
-            
-            // Download logos.json
-            setTimeout(() => {
-                downloadJSON(logosData, 'logos.json');
-            }, 100);
-
-            // Show success message
+            setTimeout(() => { downloadJSON(logosData, 'logos.json'); }, 100);
             const successMsg = document.getElementById('successMsg');
             successMsg.style.display = 'block';
-            setTimeout(() => {
-                successMsg.style.display = 'none';
-            }, 5000);
+            setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
         }
 
         function downloadJSON(data, filename) {
@@ -325,8 +272,6 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
-
-        // Initialize on load
         loadData();
     </script>
 </body>
