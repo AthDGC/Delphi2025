@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CMS - Local Editor</title>
 
-    <link rel="icon" type="image/jpeg" href="https://athdgc.github.io/Delphi2025/images/athdgc-favicon.jpg?v=20">
-    <link rel="shortcut icon" type="image/jpeg" href="https://athdgc.github.io/Delphi2025/images/athdgc-favicon.jpg?v=20">
-    <link rel="apple-touch-icon" href="https://athdgc.github.io/Delphi2025/images/athdgc-favicon.jpg?v=20">
+    <link rel="icon" type="image/jpeg" href="images/athdgc-favicon.jpg">
+    
+    <link rel="shortcut icon" type="image/jpeg" href="/Delphi2025/images/athdgc-favicon.jpg">
+    
+    <link rel="apple-touch-icon" href="https://athdgc.github.io/Delphi2025/images/athdgc-favicon.jpg">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -29,16 +27,8 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             padding: 40px;
         }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 32px;
-        }
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
+        h1 { color: #333; margin-bottom: 10px; font-size: 32px; }
+        .subtitle { color: #666; margin-bottom: 30px; font-size: 14px; }
         .section {
             margin-bottom: 40px;
             padding: 25px;
@@ -46,23 +36,10 @@
             border-radius: 8px;
             border-left: 4px solid #667eea;
         }
-        .section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        input[type="text"],
-        input[type="url"] {
+        .section h2 { color: #667eea; margin-bottom: 20px; font-size: 20px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 14px; }
+        input[type="text"], input[type="url"] {
             width: 100%;
             padding: 12px;
             border: 2px solid #e0e0e0;
@@ -70,10 +47,7 @@
             font-size: 14px;
             transition: border-color 0.3s;
         }
-        input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
+        input:focus { outline: none; border-color: #667eea; }
         .logo-item {
             background: white;
             padding: 20px;
@@ -81,11 +55,7 @@
             border-radius: 6px;
             border: 2px solid #e0e0e0;
         }
-        .logo-item h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
+        .logo-item h3 { color: #667eea; margin-bottom: 15px; font-size: 16px; }
         button {
             background: #667eea;
             color: white;
@@ -97,20 +67,10 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        button:hover {
-            background: #5568d3;
-        }
-        .button-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 30px;
-        }
-        .export-btn {
-            background: #764ba2;
-        }
-        .export-btn:hover {
-            background: #5a3a7a;
-        }
+        button:hover { background: #5568d3; }
+        .button-group { display: flex; gap: 10px; margin-top: 30px; }
+        .export-btn { background: #764ba2; }
+        .export-btn:hover { background: #5a3a7a; }
         .instructions {
             background: #fff3cd;
             border: 2px solid #ffc107;
@@ -118,13 +78,8 @@
             padding: 20px;
             margin-bottom: 30px;
         }
-        .instructions ol {
-            margin-left: 20px;
-            color: #856404;
-        }
-        .instructions li {
-            margin-bottom: 8px;
-        }
+        .instructions ol { margin-left: 20px; color: #856404; }
+        .instructions li { margin-bottom: 8px; }
         .success {
             background: #ede7f6;
             border: 2px solid #764ba2;
